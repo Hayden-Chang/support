@@ -20,5 +20,5 @@ Example (GitHub Pages):
 
 ## Notes
 
-- Replace the contact details in the policy before release.
+- Privacy contact for InterBeat: `shenshuoyouguang@outlook.com`.
 - Keep policy updates in sync with app behavior and App Privacy disclosures.
