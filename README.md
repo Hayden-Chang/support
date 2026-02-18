@@ -7,6 +7,8 @@ This repository hosts support content for the Interfit iOS app, including the pu
 - `index.html`: Support home page
 - `privacy-policy.html`: Public privacy policy page (Chinese + English)
 - `privacy-policy.md`: Editable Markdown source of the privacy policy
+- `github-pages-tutorial.html`: Public tutorial page for GitHub Pages
+- `github-pages-tutorial.md`: Markdown source of the tutorial
 
 ## App Store Connect
 
