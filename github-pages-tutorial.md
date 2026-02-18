@@ -20,7 +20,7 @@ GitHub Pages 是 GitHub 提供的静态网站托管服务。你可以直接把�
 
 1. 你有可用的 GitHub 账号。
 2. 你已经创建了一个仓库（例如：`support`）。
-3. 仓库中已有要发布的页面文件（例如：`index.html`、`privacy-policy.html`）。
+3. 仓库中已有要发布的页面文件（例如：`index.html`、`privacy-policies/interfit/privacy-policy.html`）。
 4. 代码已经推送到远程分支（通常是 `main`）。
 
 ## 3. 创建并准备 support 仓库
@@ -92,23 +92,23 @@ gh api repos/<username>/support/pages
 https://<username>.github.io/<repo-name>/
 ```
 
-如果隐私政策文件名是 `privacy-policy.html`，那链接就是：
+如果隐私政策文件位于 `privacy-policies/interfit/privacy-policy.html`，那链接就是：
 
 ```text
-https://<username>.github.io/<repo-name>/privacy-policy.html
+https://<username>.github.io/<repo-name>/privacy-policies/interfit/privacy-policy.html
 ```
 
 InterBeat 当前示例：
 
 - 站点首页：`https://hayden-chang.github.io/support/`
-- 隐私政策：`https://hayden-chang.github.io/support/privacy-policy.html`
+- 隐私政策：`https://hayden-chang.github.io/support/privacy-policies/interfit/privacy-policy.html`
 
 ## 7. 如何验证是否成功
 
 可以用浏览器直接打开 URL，或用命令行检查状态码：
 
 ```bash
-curl -I https://<username>.github.io/<repo-name>/privacy-policy.html
+curl -I https://<username>.github.io/<repo-name>/privacy-policies/interfit/privacy-policy.html
 ```
 
 如果返回 `HTTP 200`，说明页面可访问。
@@ -122,7 +122,7 @@ curl -I https://<username>.github.io/<repo-name>/privacy-policy.html
 1. 确认 `Settings > Pages` 已开启，且分支/目录正确。
 2. 确认目标文件在仓库根目录（或你设置的目录）中存在。
 3. 等待几分钟，Pages 首次构建有延迟。
-4. 检查文件名大小写是否一致（如 `privacy-policy.html`）。
+4. 检查文件名大小写是否一致（如 `privacy-policies/interfit/privacy-policy.html`）。
 
 ### 问题 2：推送失败（SSH 公钥问题）
 
@@ -147,12 +147,12 @@ git push -u origin main
 2. 找到 `App Information`。
 3. 在 `Privacy Policy URL` 填入可公开访问的隐私政策链接。
 
-建议使用 `privacy-policy.html` 的固定 URL，避免后续路径变化。
+建议使用项目目录下的固定 URL（如 `privacy-policies/interfit/privacy-policy.html`），避免后续路径变化。
 
 ## 10. 最小发布清单（可直接照做）
 
-1. 准备 `index.html` 和 `privacy-policy.html`。
+1. 准备 `index.html` 和 `privacy-policies/interfit/privacy-policy.html`。
 2. 提交并推送到 `main`。
 3. 在 `Settings > Pages` 选择 `main / (root)` 并保存。
-4. 等待构建完成，确认 `privacy-policy.html` 返回 200。
+4. 等待构建完成，确认 `privacy-policies/interfit/privacy-policy.html` 返回 200。
 5. 把该链接填入 App Store Connect。

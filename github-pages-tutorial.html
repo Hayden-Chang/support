@@ -85,7 +85,7 @@
       <ol>
         <li>准备一个可用 GitHub 账号。</li>
         <li>创建好仓库（例如 <code>support</code>）。</li>
-        <li>仓库中有要发布的页面文件（如 <code>index.html</code>、<code>privacy-policy.html</code>）。</li>
+        <li>仓库中有要发布的页面文件（如 <code>index.html</code>、<code>privacy-policies/interfit/privacy-policy.html</code>）。</li>
         <li>改动已推送到远程分支（通常 <code>main</code>）。</li>
       </ol>
 
@@ -128,12 +128,12 @@ git push -u origin main</code></pre>
       <h2>6. Pages 地址规则</h2>
       <p>默认格式：</p>
       <pre><code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/</code></pre>
-      <p>如果隐私政策文件是 <code>privacy-policy.html</code>，地址通常是：</p>
-      <pre><code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/privacy-policy.html</code></pre>
+      <p>如果隐私政策文件是 <code>privacy-policies/interfit/privacy-policy.html</code>，地址通常是：</p>
+      <pre><code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/privacy-policies/interfit/privacy-policy.html</code></pre>
 
       <h2>7. 如何验证是否成功</h2>
       <p>可直接浏览器打开，或用命令行检测：</p>
-      <pre><code>curl -I https://&lt;username&gt;.github.io/&lt;repo-name&gt;/privacy-policy.html</code></pre>
+      <pre><code>curl -I https://&lt;username&gt;.github.io/&lt;repo-name&gt;/privacy-policies/interfit/privacy-policy.html</code></pre>
       <p>返回 <code>HTTP 200</code> 即可用于 App Store Connect。</p>
 
       <h2>8. 常见问题</h2>
@@ -159,7 +159,7 @@ git push -u origin main</code></pre>
       <ol>
         <li>打开 App Store Connect 的应用信息页。</li>
         <li>找到 <code>Privacy Policy URL</code>。</li>
-        <li>填写可公开访问的 <code>privacy-policy.html</code> 链接。</li>
+        <li>填写可公开访问的 <code>privacy-policies/interfit/privacy-policy.html</code> 链接。</li>
       </ol>
       <p>建议保持链接稳定，不随版本频繁改路径。</p>
     </article>
