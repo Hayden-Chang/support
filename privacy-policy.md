@@ -1,4 +1,4 @@
-# Interfit Privacy Policy / Interfit 隐私政策
+# InterBeat Privacy Policy / InterBeat 隐私政策
 
 Effective date: 2026-02-18  
 Last updated: 2026-02-18
@@ -7,13 +7,13 @@ Last updated: 2026-02-18
 
 ### 1. Overview
 
-Interfit ("we", "our", "us") provides a workout timer and music-assisted training experience on iOS.
+InterBeat ("we", "our", "us") provides a workout timer and music-assisted training experience on iOS.
 
-This Privacy Policy explains what data Interfit processes, how it is used, and your choices.
+This Privacy Policy explains what data InterBeat processes, how it is used, and your choices.
 
 ### 2. Information We Process
 
-Interfit currently does not require account registration.
+InterBeat currently does not require account registration.
 
 We may process the following categories of data on your device:
 
@@ -26,7 +26,7 @@ We do not intentionally collect the content of your music (for example, song lyr
 
 ### 3. Permissions
 
-Interfit may request the following iOS permissions:
+InterBeat may request the following iOS permissions:
 
 - Apple Music access: to play Apple Music content during training when you choose to use it.
 - Notifications: to deliver workout cue notifications.
@@ -46,11 +46,11 @@ We use processed data to:
 
 We do not sell personal data.
 
-Interfit does not include third-party advertising SDKs. Data may be processed through Apple services when you use Apple system capabilities (for example, Apple Music, iCloud, and notifications), subject to Apple's terms and privacy practices.
+InterBeat does not include third-party advertising SDKs. Data may be processed through Apple services when you use Apple system capabilities (for example, Apple Music, iCloud, and notifications), subject to Apple's terms and privacy practices.
 
 ### 6. Data Storage and Retention
 
-- Most Interfit data is stored locally on your device.
+- Most InterBeat data is stored locally on your device.
 - Optional analytics events are stored locally and can be disabled in settings.
 - If iCloud backup is enabled, backup files are stored in your iCloud account until you delete them.
 
@@ -64,7 +64,7 @@ You can:
 
 ### 8. Children's Privacy
 
-Interfit is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
+InterBeat is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
 
 ### 9. Changes to This Policy
 
@@ -80,13 +80,13 @@ For privacy questions, contact us via your App Support channel and update this s
 
 ### 1. 概述
 
-Interfit（下称“我们”）是一款 iOS 训练计时与音乐辅助训练应用。
+InterBeat（下称“我们”）是一款 iOS 训练计时与音乐辅助训练应用。
 
-本隐私政策说明 Interfit 处理哪些数据、处理目的以及你的选择权。
+本隐私政策说明 InterBeat 处理哪些数据、处理目的以及你的选择权。
 
 ### 2. 我们处理的信息
 
-Interfit 当前不要求账号注册。
+InterBeat 当前不要求账号注册。
 
 我们可能在你的设备上处理以下信息类别：
 
@@ -99,7 +99,7 @@ Interfit 当前不要求账号注册。
 
 ### 3. 权限说明
 
-Interfit 可能申请以下 iOS 权限：
+InterBeat 可能申请以下 iOS 权限：
 
 - Apple Music 权限：用于你主动选择后在训练中播放 Apple Music 内容。
 - 通知权限：用于发送训练提示通知。
@@ -119,11 +119,11 @@ Interfit 可能申请以下 iOS 权限：
 
 我们不会出售个人信息。
 
-Interfit 不集成第三方广告 SDK。你使用 Apple 系统能力（如 Apple Music、iCloud、通知）时，相关数据可能按 Apple 的条款与隐私政策由 Apple 处理。
+InterBeat 不集成第三方广告 SDK。你使用 Apple 系统能力（如 Apple Music、iCloud、通知）时，相关数据可能按 Apple 的条款与隐私政策由 Apple 处理。
 
 ### 6. 存储与保留
 
-- Interfit 的大部分数据保存在你的本地设备。
+- InterBeat 的大部分数据保存在你的本地设备。
 - 可选匿名分析事件默认保存在本地，可随时关闭。
 - 若启用 iCloud 备份，备份文件会保存在你的 iCloud 账户中，直到你主动删除。
 
@@ -137,7 +137,7 @@ Interfit 不集成第三方广告 SDK。你使用 Apple 系统能力（如 Apple
 
 ### 8. 儿童隐私
 
-Interfit 不面向 13 岁以下儿童，我们也不会故意收集 13 岁以下儿童的个人信息。
+InterBeat 不面向 13 岁以下儿童，我们也不会故意收集 13 岁以下儿童的个人信息。
 
 ### 9. 政策更新
 

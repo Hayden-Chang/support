@@ -1,4 +1,4 @@
-# GitHub Pages 教程（Interfit 实战版）
+# GitHub Pages 教程（InterBeat 实战版）
 
 最后更新：2026-02-18
 
@@ -12,7 +12,7 @@ GitHub Pages 是 GitHub 提供的静态网站托管服务。你可以直接把�
 - 隐私政策页（Privacy Policy）
 - 产品说明文档、FAQ、更新日志
 
-对 Interfit 这种需要在 App Store Connect 填写隐私政策 URL 的应用来说，GitHub Pages 是一个低成本、上线快、可版本管理的方案。
+对 InterBeat 这种需要在 App Store Connect 填写隐私政策 URL 的应用来说，GitHub Pages 是一个低成本、上线快、可版本管理的方案。
 
 ## 2. 开通前准备
 
@@ -98,7 +98,7 @@ https://<username>.github.io/<repo-name>/
 https://<username>.github.io/<repo-name>/privacy-policy.html
 ```
 
-Interfit 当前示例：
+InterBeat 当前示例：
 
 - 站点首页：`https://hayden-chang.github.io/support/`
 - 隐私政策：`https://hayden-chang.github.io/support/privacy-policy.html`

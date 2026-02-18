@@ -1,6 +1,6 @@
-# Interfit Support Repository
+# InterBeat Support Repository
 
-This repository hosts support content for the Interfit iOS app, including the public privacy policy page required by App Store Connect.
+This repository hosts support content for the InterBeat iOS app, including the public privacy policy page required by App Store Connect.
 
 ## Files
 
