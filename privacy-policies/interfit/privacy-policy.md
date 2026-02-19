@@ -20,7 +20,6 @@ We may process the following categories of data on your device:
 - Workout and plan data: plan name, set/work/rest configuration, session history, and related settings.
 - Music selection metadata: selected Apple Music or local library item identifiers and display metadata required for playback behavior.
 - Optional anonymous usage analytics: app lifecycle and feature usage events (for example, app open and feature state), controlled by the in-app toggle "Allow anonymous usage data".
-- Optional cached community summaries: non-personal placeholder summary data for offline display.
 
 We do not intentionally collect the content of your music (for example, song lyrics), comments, or user-generated text for analytics.
 In the current public release, InterBeat stores analytics events on-device only and does not transmit analytics, workout history, or music-selection metadata to InterBeat-operated servers.
@@ -94,7 +93,6 @@ InterBeat 当前不要求账号注册。
 - 训练与计划数据：如计划名称、组数/训练时长/休息时长配置、训练历史及相关设置。
 - 音乐选择元数据：为实现播放行为所需的 Apple Music 或本地音乐条目标识及展示信息。
 - 可选匿名使用数据：如应用启动、功能状态等事件；可通过应用内“Allow anonymous usage data（允许匿名使用数据）”开关控制。
-- 可选社区摘要缓存：用于离线展示的非个人化摘要占位数据。
 
 我们不会有意在分析事件中采集歌曲内容（如歌词）、评论正文或其他用户文本内容。
 在当前公开版本中，InterBeat 的分析事件仅保存在设备本地，不会将分析事件、训练历史或音乐选择元数据传输到 InterBeat 自有服务器。
