@@ -20,7 +20,6 @@ We may process the following categories of data on your device:
 - Workout and plan data: plan name, set/work/rest configuration, session history, and related settings.
 - Music selection metadata: selected Apple Music or local library item identifiers and display metadata required for playback behavior.
 - Optional anonymous usage analytics: app lifecycle and feature usage events (for example, app open and feature state), controlled by the in-app toggle "Allow anonymous usage data".
-- Optional cached community summaries: non-personal placeholder summary data for offline display.
 
 We do not intentionally collect the content of your music (for example, song lyrics), comments, or user-generated text for analytics.
 
@@ -30,7 +29,7 @@ InterBeat may request the following iOS permissions:
 
 - Apple Music access: to play Apple Music content during training when you choose to use it.
 - Notifications: to deliver workout cue notifications.
-- Network access: to support online features such as Apple Music access and caching of community summaries.
+- Network access: to support online features such as Apple Music access.
 - iCloud access (optional): if you enable iCloud backup features, backups may be saved to your iCloud container.
 
 ### 4. How We Use Data
@@ -93,7 +92,6 @@ InterBeat 当前不要求账号注册。
 - 训练与计划数据：如计划名称、组数/训练时长/休息时长配置、训练历史及相关设置。
 - 音乐选择元数据：为实现播放行为所需的 Apple Music 或本地音乐条目标识及展示信息。
 - 可选匿名使用数据：如应用启动、功能状态等事件；可通过应用内“Allow anonymous usage data（允许匿名使用数据）”开关控制。
-- 可选社区摘要缓存：用于离线展示的非个人化摘要占位数据。
 
 我们不会有意在分析事件中采集歌曲内容（如歌词）、评论正文或其他用户文本内容。
 
@@ -103,7 +101,7 @@ InterBeat 可能申请以下 iOS 权限：
 
 - Apple Music 权限：用于你主动选择后在训练中播放 Apple Music 内容。
 - 通知权限：用于发送训练提示通知。
-- 网络访问：用于 Apple Music 等在线能力，以及社区摘要缓存等联网功能。
+- 网络访问：用于 Apple Music 等在线能力。
 - iCloud（可选）：当你启用 iCloud 备份功能时，备份文件可能保存到你的 iCloud 容器中。
 
 ### 4. 数据使用目的
