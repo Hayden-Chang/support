@@ -1,24 +1,30 @@
 # InterBeat Support Repository
 
-This repository hosts support content for the InterBeat iOS app, including the public privacy policy page required by App Store Connect.
+This repository hosts the public support content for the InterBeat iOS app.
 
 ## Files
 
-- `index.html`: Support home page
-- `privacy-policies/interfit/privacy-policy.html`: InterBeat public privacy policy page (Chinese + English)
-- `privacy-policies/interfit/privacy-policy.md`: InterBeat editable Markdown source of the privacy policy
-- `github-pages-tutorial.html`: Public tutorial page for GitHub Pages
-- `github-pages-tutorial.md`: Markdown source of the tutorial
+- `index.html`: public support page for App Store Connect `Support URL`
+- `privacy-policies/interfit/privacy-policy.html`: public privacy policy page
+- `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
+- `github-pages-tutorial.html`: public GitHub Pages tutorial
+- `github-pages-tutorial.md`: Markdown source for the tutorial
 
 ## App Store Connect
 
-Use the hosted URL of the project-specific policy page as the Privacy Policy URL.
+Use the hosted support homepage as the `Support URL`.
 
-Example (GitHub Pages):
+Example:
+
+- `https://<your-github-username>.github.io/<repo-name>/`
+
+Use the hosted privacy policy page as the `Privacy Policy URL`.
+
+Example:
 
 - `https://<your-github-username>.github.io/<repo-name>/privacy-policies/interfit/privacy-policy.html`
 
 ## Notes
 
-- Privacy contact for InterBeat: `shenshuoyouguang@outlook.com`.
-- Keep policy updates in sync with app behavior and App Privacy disclosures.
+- Support contact for InterBeat: `shenshuoyouguang@outlook.com`
+- Keep the support page and privacy policy aligned with the app's actual behavior and review notes
