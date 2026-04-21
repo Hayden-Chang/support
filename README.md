@@ -5,6 +5,7 @@ This repository hosts the public support content for the InterBeat iOS app.
 ## Files
 
 - `index.html`: public support page for App Store Connect `Support URL`
+- `app_store_keyword_strategy.md`: App Store title/subtitle/keywords recommendation based on `keyword_research.csv`
 - `privacy-policies/interfit/privacy-policy.html`: public privacy policy page
 - `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
 - `github-pages-tutorial.html`: public GitHub Pages tutorial
