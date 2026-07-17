@@ -8,6 +8,8 @@ This repository hosts the public support content for the InterBeat iOS app.
 - `app_store_keyword_strategy.md`: App Store title/subtitle/keywords recommendation based on `keyword_research.csv`
 - `privacy-policies/interfit/privacy-policy.html`: public privacy policy page
 - `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
+- `privacy-policies/thingdo/privacy-policy.html`: public bilingual privacy policy page for Thingdo / 有形清单
+- `privacy-policies/thingdo/privacy-policy.md`: editable Markdown source for the Thingdo privacy policy
 - `github-pages-tutorial.html`: public GitHub Pages tutorial
 - `github-pages-tutorial.md`: Markdown source for the tutorial
 
@@ -24,6 +26,7 @@ Use the hosted privacy policy page as the `Privacy Policy URL`.
 Example:
 
 - `https://<your-github-username>.github.io/<repo-name>/privacy-policies/interfit/privacy-policy.html`
+- `https://<your-github-username>.github.io/<repo-name>/privacy-policies/thingdo/privacy-policy.html`
 
 ## Notes
 
