@@ -1,10 +1,11 @@
-# InterBeat Support Repository
+# iOS App Support Repository
 
-This repository hosts the public support content for the InterBeat iOS app.
+This repository hosts public support and privacy content for the InterBeat and Thingdo iOS apps.
 
 ## Files
 
-- `index.html`: public support page for App Store Connect `Support URL`
+- `index.html`: public support page for InterBeat
+- `thingdo/index.html`: bilingual support page for Thingdo / 有形清单
 - `app_store_keyword_strategy.md`: App Store title/subtitle/keywords recommendation based on `keyword_research.csv`
 - `privacy-policies/interfit/privacy-policy.html`: public privacy policy page
 - `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
@@ -15,20 +16,18 @@ This repository hosts the public support content for the InterBeat iOS app.
 
 ## App Store Connect
 
-Use the hosted support homepage as the `Support URL`.
+Use the support page that matches the app as the `Support URL`.
 
-Example:
+- InterBeat: `https://hayden-chang.github.io/support/`
+- Thingdo / 有形清单: `https://hayden-chang.github.io/support/thingdo/`
 
-- `https://<your-github-username>.github.io/<repo-name>/`
+Use the matching hosted privacy policy page as the `Privacy Policy URL`.
 
-Use the hosted privacy policy page as the `Privacy Policy URL`.
-
-Example:
-
-- `https://<your-github-username>.github.io/<repo-name>/privacy-policies/interfit/privacy-policy.html`
-- `https://<your-github-username>.github.io/<repo-name>/privacy-policies/thingdo/privacy-policy.html`
+- InterBeat: `https://hayden-chang.github.io/support/privacy-policies/interfit/privacy-policy.html`
+- Thingdo / 有形清单: `https://hayden-chang.github.io/support/privacy-policies/thingdo/privacy-policy.html`
 
 ## Notes
 
 - Support contact for InterBeat: `shenshuoyouguang@outlook.com`
+- Support contact for Thingdo: `shenshuoyouguang@outlook.com`
 - Keep the support page and privacy policy aligned with the app's actual behavior and review notes
