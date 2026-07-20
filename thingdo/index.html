@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thingdo（有形清单）官方技术支持：使用帮助、常见问题、隐私政策与联系邮箱。">
+  <meta name="robots" content="index, follow">
+  <title>Thingdo Support | 有形清单技术支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f7f4;
+      --card: #ffffff;
+      --ink: #101010;
+      --muted: #666660;
+      --line: #d9d9d2;
+      --red: #f3184e;
+      --blue: #20b9ea;
+      --green: #2bc272;
+      --gold: #ffb000;
+      --dark: #101010;
+      --dark-card: #1b1b1b;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+        "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 4px;
+      border-radius: 10px;
+    }
+
+    .shell {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 80px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.05rem;
+      font-weight: 850;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--ink);
+      color: var(--gold);
+      font-size: 1.35rem;
+      line-height: 1;
+      box-shadow: 0 6px 18px rgb(16 16 16 / 16%);
+    }
+
+    .language-nav { display: flex; gap: 8px; }
+
+    .language-nav a {
+      min-width: 56px;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgb(255 255 255 / 68%);
+      font-size: 0.88rem;
+      font-weight: 750;
+      text-decoration: none;
+      transition: background 180ms ease, border-color 180ms ease;
+    }
+
+    .language-nav a:hover {
+      background: var(--card);
+      border-color: #b8b8b0;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      align-items: center;
+      gap: 48px;
+      padding: clamp(36px, 6vw, 72px);
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background: var(--card);
+      box-shadow: 0 28px 80px rgb(16 16 16 / 9%);
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--red);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p { margin-top: 0; }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      max-width: 10ch;
+      margin-bottom: 22px;
+      font-size: clamp(3rem, 6.4vw, 5.5rem);
+      font-weight: 920;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 900;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      font-weight: 820;
+    }
+
+    .hero-copy {
+      max-width: 58ch;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      font-weight: 780;
+      text-decoration: none;
+      transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+    }
+
+    .button svg { width: 18px; height: 18px; }
+
+    .button-primary {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #ffffff;
+    }
+
+    .button:hover {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #ffffff;
+    }
+
+    .button-primary:hover {
+      border-color: #343434;
+      background: #343434;
+    }
+
+    .object-stage {
+      position: relative;
+      min-height: 340px;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 34%;
+      box-shadow: inset -12px -16px 26px rgb(0 0 0 / 13%), 0 24px 38px rgb(16 16 16 / 16%);
+      transform: rotate(var(--rotate));
+    }
+
+    .orb::after {
+      content: "";
+      position: absolute;
+      inset: 12% 15% auto;
+      height: 22%;
+      border-radius: 999px;
+      background: rgb(255 255 255 / 34%);
+      filter: blur(2px);
+    }
+
+    .orb-red { width: 132px; height: 132px; top: 8px; left: 5%; background: var(--red); --rotate: -13deg; }
+    .orb-blue { width: 154px; height: 154px; top: 96px; right: 2%; background: var(--blue); --rotate: 12deg; }
+    .orb-gold { width: 110px; height: 110px; bottom: 10px; left: 22%; background: var(--gold); --rotate: 8deg; }
+
+    .check {
+      position: absolute;
+      z-index: 2;
+      width: 156px;
+      height: 156px;
+      display: grid;
+      place-items: center;
+      top: 106px;
+      left: 24%;
+      border-radius: 46px;
+      background: var(--green);
+      color: #07391e;
+      box-shadow: inset -14px -18px 30px rgb(0 0 0 / 12%), 0 28px 48px rgb(16 16 16 / 22%);
+      transform: rotate(-7deg);
+    }
+
+    .check svg { width: 86px; height: 86px; filter: drop-shadow(0 4px 2px rgb(255 255 255 / 20%)); }
+
+    .section-block { padding: clamp(72px, 10vw, 120px) 0 0; }
+
+    .section-heading {
+      max-width: 690px;
+      margin-bottom: 30px;
+    }
+
+    .section-heading p,
+    .card p,
+    .faq-item p,
+    .meta-list { color: var(--muted); }
+
+    .help-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 210px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--card);
+    }
+
+    .card-number {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 42px;
+      border-radius: 12px;
+      background: var(--paper);
+      font-size: 0.8rem;
+      font-weight: 850;
+    }
+
+    .faq-list { display: grid; gap: 12px; }
+
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--card);
+    }
+
+    .faq-item summary {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: "+";
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .faq-item[open] summary::after { content: "−"; }
+
+    .faq-item p { padding: 0 20px 20px; margin-bottom: 0; }
+
+    .contact {
+      margin-top: clamp(72px, 10vw, 120px);
+      padding: clamp(36px, 7vw, 72px);
+      border-radius: 36px;
+      background: var(--dark);
+      color: #ffffff;
+    }
+
+    .contact h2 { max-width: 10ch; }
+
+    .contact p { max-width: 64ch; color: #bdbdb7; }
+
+    .contact .button-primary {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    .contact .button-secondary {
+      border-color: #494949;
+      background: var(--dark-card);
+      color: #ffffff;
+    }
+
+    .meta-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 28px;
+      overflow: hidden;
+      border: 1px solid #353535;
+      border-radius: 18px;
+      background: #353535;
+    }
+
+    .meta-list div { padding: 18px; background: var(--dark-card); }
+    .meta-list dt { color: #8f8f89; font-size: 0.78rem; font-weight: 750; }
+    .meta-list dd { margin: 3px 0 0; color: #ffffff; font-weight: 760; }
+
+    .english {
+      margin-top: 96px;
+      padding-top: 80px;
+      border-top: 4px solid var(--ink);
+    }
+
+    .english .help-grid { margin-top: 28px; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 36px 0 48px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 780px) {
+      .hero { grid-template-columns: 1fr; min-height: 0; gap: 20px; }
+      .object-stage { min-height: 300px; }
+      .help-grid { grid-template-columns: 1fr; }
+      .meta-list { grid-template-columns: 1fr; }
+      .card { min-height: 0; }
+      .card-number { margin-bottom: 28px; }
+    }
+
+    @media (max-width: 520px) {
+      .shell { width: min(100% - 20px, 1080px); }
+      .topbar { min-height: 68px; }
+      .brand-mark { width: 32px; height: 32px; border-radius: 10px; }
+      .brand-name { display: none; }
+      .hero,
+      .contact { padding: 28px 20px; border-radius: 26px; }
+      h1 { font-size: clamp(2.8rem, 13vw, 3.4rem); }
+      .actions { flex-direction: column; }
+      .button { width: 100%; }
+      .object-stage { min-height: 260px; transform: scale(0.88); margin: -12px -20px; }
+      .section-block { padding-top: 72px; }
+      .english { margin-top: 72px; padding-top: 64px; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button,
+      .language-nav a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="#top" aria-label="Thingdo support home">
+      <span class="brand-mark" aria-hidden="true">!</span>
+      <span class="brand-name">Thingdo · 有形清单</span>
+    </a>
+    <nav class="language-nav" aria-label="语言 / Language">
+      <a href="#zh">中文</a>
+      <a href="#en" lang="en">EN</a>
+    </nav>
+  </header>
+
+  <main id="top" class="shell">
+    <section id="zh" class="hero" lang="zh-CN">
+      <div>
+        <p class="eyebrow">Thingdo 官方支持</p>
+        <h1>让每一件事，<br>都看得见。</h1>
+        <p class="hero-copy">
+          有形清单把待办事项变成可互动的 3D 物体。这里提供使用帮助、问题排查与官方联系渠道。
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
+            联系技术支持
+          </a>
+          <a class="button" href="../privacy-policies/thingdo/privacy-policy.html">查看隐私政策</a>
+        </div>
+      </div>
+      <div class="object-stage" aria-label="彩色任务物体插图" role="img">
+        <span class="orb orb-red"></span>
+        <span class="orb orb-blue"></span>
+        <span class="orb orb-gold"></span>
+        <span class="check"><svg aria-hidden="true" viewBox="0 0 100 100" fill="none"><path d="M22 52 42 71 79 28" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+    </section>
+
+    <section class="section-block" lang="zh-CN">
+      <div class="section-heading">
+        <p class="eyebrow">快速上手</p>
+        <h2>常用操作</h2>
+        <p>Thingdo 不需要账号，任务创建、物体匹配与设置均在设备本地完成。</p>
+      </div>
+      <div class="help-grid">
+        <article class="card"><span class="card-number">01</span><h3>创建任务</h3><p>在顶部输入任务标题，选择优先级后点击“+”。App 会在设备上自动匹配一个 3D 物体。</p></article>
+        <article class="card"><span class="card-number">02</span><h3>切换任务</h3><p>左右拖动 3D 圆环或下方任务条；也可以切换到列表模式查看和管理全部任务。</p></article>
+        <article class="card"><span class="card-number">03</span><h3>完成与删除</h3><p>在 3D 舞台上向上滑可切换完成状态；向下进行较长滑动可删除当前任务。</p></article>
+        <article class="card"><span class="card-number">04</span><h3>声音与触感</h3><p>打开设置页，可分别关闭 Sound（声音）或 Haptics（触感反馈）。</p></article>
+      </div>
+    </section>
+
+    <section class="section-block" lang="zh-CN">
+      <div class="section-heading">
+        <p class="eyebrow">问题排查</p>
+        <h2>常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>App 需要账号或网络吗？</summary><p>不需要账号。任务、设置和物体匹配都在设备本地完成，断网也可以使用。当前版本不提供云同步，数据不会自动同步到其他设备。</p></details>
+        <details class="faq-item"><summary>为什么会请求相机权限？</summary><p>相机权限只用于“相机物体”的实时预览和 App 内拍立得互动。拒绝权限后会显示静态示例画面，不影响普通待办功能。</p></details>
+        <details class="faq-item"><summary>物体匹配不准确怎么办？</summary><p>请尝试使用更明确、简短的任务标题。匹配失败时会显示默认方块，但任务的创建、完成、删除和筛选仍可正常使用。</p></details>
+        <details class="faq-item"><summary>如何删除本地数据？</summary><p>你可以在 App 内逐条删除任务。如需移除全部本地数据，请在 iOS 中选择“删除 App”，不要选择“卸载 App”；“卸载 App”会保留文稿与数据。Apple 设备备份中可能仍保留由你或 Apple 管理的副本。</p></details>
+      </div>
+    </section>
+
+    <section class="contact" lang="zh-CN">
+      <p class="eyebrow">仍然需要帮助？</p>
+      <h2>把问题告诉我们。</h2>
+      <p>邮件中建议附上 App 版本、iOS 版本、设备型号、复现步骤与截图。请不要发送敏感个人信息或真实任务内容。</p>
+      <div class="actions">
+        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">shenshuoyouguang@outlook.com</a>
+        <a class="button button-secondary" href="../privacy-policies/thingdo/privacy-policy.html">隐私政策</a>
+      </div>
+      <dl class="meta-list">
+        <div><dt>当前版本</dt><dd>1.0</dd></div>
+        <div><dt>系统要求</dt><dd>iOS 18.0 或更高版本</dd></div>
+        <div><dt>应用标识</dt><dd>com.HaydenChang.TodoObjects</dd></div>
+        <div><dt>最近更新</dt><dd>2026 年 7 月 21 日</dd></div>
+      </dl>
+    </section>
+
+    <section id="en" class="english" lang="en">
+      <div class="section-heading">
+        <p class="eyebrow">Thingdo Support</p>
+        <h2>Help in English</h2>
+        <p>Thingdo turns everyday tasks into interactive 3D objects. No account is required; tasks, preferences, and object matching stay on your device.</p>
+      </div>
+      <div class="help-grid">
+        <article class="card"><h3>Create a task</h3><p>Enter a title, choose a priority, and tap “+”. Thingdo matches the title to a 3D object on your device.</p></article>
+        <article class="card"><h3>Manage tasks</h3><p>Drag the 3D ring or task strip to change tasks. Swipe up on the stage to toggle completion, or use a longer downward swipe to delete.</p></article>
+        <article class="card"><h3>Camera permission</h3><p>Camera access is optional and only powers the camera-object preview and instant-photo effect. Other task features remain available without it.</p></article>
+        <article class="card"><h3>Local data</h3><p>There is no cloud sync in version 1.0. To remove all local data, choose <strong>Delete App</strong> in iOS; <strong>Offload App</strong> preserves documents and data. Apple device backups may retain a copy.</p></article>
+      </div>
+      <div class="actions" style="margin-top: 28px">
+        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">Email Support</a>
+        <a class="button" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <p>© 2026 Haichao Zhang. Thingdo / 有形清单.</p>
+    <p>Support: <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></p>
+  </footer>
+</body>
+</html>
