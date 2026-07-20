@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -361,13 +361,9 @@
     .meta-list dt { color: #8f8f89; font-size: 0.78rem; font-weight: 750; }
     .meta-list dd { margin: 3px 0 0; color: #ffffff; font-weight: 760; }
 
-    .english {
+    .hero-secondary {
       margin-top: 96px;
-      padding-top: 80px;
-      border-top: 4px solid var(--ink);
     }
-
-    .english .help-grid { margin-top: 28px; }
 
     footer {
       display: flex;
@@ -401,7 +397,7 @@
       .button { width: 100%; }
       .object-stage { min-height: 260px; transform: scale(0.88); margin: -12px -20px; }
       .section-block { padding-top: 72px; }
-      .english { margin-top: 72px; padding-top: 64px; }
+      .hero-secondary { margin-top: 72px; }
       footer { flex-direction: column; }
     }
 
@@ -419,13 +415,79 @@
       <span class="brand-name">Thingdo · 有形清单</span>
     </a>
     <nav class="language-nav" aria-label="语言 / Language">
-      <a href="#zh">中文</a>
       <a href="#en" lang="en">EN</a>
+      <a href="#zh">中文</a>
     </nav>
   </header>
 
   <main id="top" class="shell">
-    <section id="zh" class="hero" lang="zh-CN">
+    <section id="en" class="hero" lang="en">
+      <div>
+        <p class="eyebrow">Official Thingdo Support</p>
+        <h1>Make every task tangible.</h1>
+        <p class="hero-copy">
+          Thingdo turns everyday tasks into interactive 3D objects. Find setup guidance, troubleshooting steps, and official support here.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
+            Email Support
+          </a>
+          <a class="button" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="object-stage" aria-label="Colorful task objects" role="img">
+        <span class="orb orb-red"></span>
+        <span class="orb orb-blue"></span>
+        <span class="orb orb-gold"></span>
+        <span class="check"><svg aria-hidden="true" viewBox="0 0 100 100" fill="none"><path d="M22 52 42 71 79 28" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+    </section>
+
+    <section class="section-block" lang="en">
+      <div class="section-heading">
+        <p class="eyebrow">Quick Start</p>
+        <h2>Everyday actions</h2>
+        <p>No account is required. Tasks, preferences, and object matching stay on your device.</p>
+      </div>
+      <div class="help-grid">
+        <article class="card"><span class="card-number">01</span><h3>Create a task</h3><p>Enter a title, choose a priority, and tap “+”. Thingdo matches the title to a 3D object on your device.</p></article>
+        <article class="card"><span class="card-number">02</span><h3>Switch tasks</h3><p>Drag the 3D ring or task strip to move between tasks, or switch to list mode to view and manage everything.</p></article>
+        <article class="card"><span class="card-number">03</span><h3>Complete or delete</h3><p>Swipe up on the 3D stage to toggle completion. Use a longer downward swipe to delete the current task.</p></article>
+        <article class="card"><span class="card-number">04</span><h3>Sound and haptics</h3><p>Open Settings to turn Sound or Haptics off independently.</p></article>
+      </div>
+    </section>
+
+    <section class="section-block" lang="en">
+      <div class="section-heading">
+        <p class="eyebrow">Troubleshooting</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Does Thingdo need an account or internet connection?</summary><p>No account is required. Tasks, settings, and object matching are handled on your device, so the app works offline. Version 1.0 does not include cloud sync.</p></details>
+        <details class="faq-item"><summary>Why does Thingdo request camera access?</summary><p>Camera access is optional and only powers the camera-object preview and instant-photo effect. Other task features remain available without it.</p></details>
+        <details class="faq-item"><summary>What if the matched object is not accurate?</summary><p>Try a shorter, more specific task title. If matching fails, Thingdo shows a default cube while task creation, completion, deletion, and filtering continue to work.</p></details>
+        <details class="faq-item"><summary>How do I remove local data?</summary><p>You can delete tasks individually in the app. To remove all local data, choose <strong>Delete App</strong> in iOS; <strong>Offload App</strong> preserves documents and data. Apple device backups may retain a copy.</p></details>
+      </div>
+    </section>
+
+    <section class="contact" lang="en">
+      <p class="eyebrow">Still need help?</p>
+      <h2>Tell us what happened.</h2>
+      <p>Please include the Thingdo version, iOS version, device model, reproduction steps, and screenshots when helpful. Do not send sensitive personal information or real task content.</p>
+      <div class="actions">
+        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">shenshuoyouguang@outlook.com</a>
+        <a class="button button-secondary" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
+      </div>
+      <dl class="meta-list">
+        <div><dt>Current version</dt><dd>1.0</dd></div>
+        <div><dt>Requires</dt><dd>iOS 18.0 or later</dd></div>
+        <div><dt>Bundle ID</dt><dd>com.HaydenChang.TodoObjects</dd></div>
+        <div><dt>Last updated</dt><dd>July 21, 2026</dd></div>
+      </dl>
+    </section>
+
+    <section id="zh" class="hero hero-secondary" lang="zh-CN">
       <div>
         <p class="eyebrow">Thingdo 官方支持</p>
         <h1>让每一件事，<br>都看得见。</h1>
@@ -491,23 +553,6 @@
       </dl>
     </section>
 
-    <section id="en" class="english" lang="en">
-      <div class="section-heading">
-        <p class="eyebrow">Thingdo Support</p>
-        <h2>Help in English</h2>
-        <p>Thingdo turns everyday tasks into interactive 3D objects. No account is required; tasks, preferences, and object matching stay on your device.</p>
-      </div>
-      <div class="help-grid">
-        <article class="card"><h3>Create a task</h3><p>Enter a title, choose a priority, and tap “+”. Thingdo matches the title to a 3D object on your device.</p></article>
-        <article class="card"><h3>Manage tasks</h3><p>Drag the 3D ring or task strip to change tasks. Swipe up on the stage to toggle completion, or use a longer downward swipe to delete.</p></article>
-        <article class="card"><h3>Camera permission</h3><p>Camera access is optional and only powers the camera-object preview and instant-photo effect. Other task features remain available without it.</p></article>
-        <article class="card"><h3>Local data</h3><p>There is no cloud sync in version 1.0. To remove all local data, choose <strong>Delete App</strong> in iOS; <strong>Offload App</strong> preserves documents and data. Apple device backups may retain a copy.</p></article>
-      </div>
-      <div class="actions" style="margin-top: 28px">
-        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">Email Support</a>
-        <a class="button" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
-      </div>
-    </section>
   </main>
 
   <footer class="shell">
