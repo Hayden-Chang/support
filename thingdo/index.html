@@ -39,6 +39,7 @@
     a { color: inherit; }
 
     a:focus-visible,
+    button:focus-visible,
     summary:focus-visible {
       outline: 3px solid var(--blue);
       outline-offset: 4px;
@@ -66,19 +67,6 @@
       font-weight: 850;
       letter-spacing: -0.03em;
       text-decoration: none;
-    }
-
-    .brand-mark {
-      display: grid;
-      width: 36px;
-      height: 36px;
-      place-items: center;
-      border-radius: 12px;
-      background: var(--ink);
-      color: var(--gold);
-      font-size: 1.35rem;
-      line-height: 1;
-      box-shadow: 0 6px 18px rgb(16 16 16 / 16%);
     }
 
     .language-nav { display: flex; gap: 8px; }
@@ -182,6 +170,8 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--paper);
+      cursor: pointer;
+      font: inherit;
       font-weight: 780;
       text-decoration: none;
       transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
@@ -365,6 +355,118 @@
       margin-top: 96px;
     }
 
+    .support-dialog {
+      width: min(520px, calc(100% - 24px));
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--card);
+      color: var(--ink);
+      box-shadow: 0 30px 90px rgb(16 16 16 / 28%);
+    }
+
+    .support-dialog::backdrop {
+      background: rgb(16 16 16 / 48%);
+      backdrop-filter: blur(6px);
+    }
+
+    .support-dialog[open] { animation: dialog-in 180ms ease-out; }
+
+    .support-dialog-card {
+      position: relative;
+      padding: 34px;
+    }
+
+    .support-dialog-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .support-dialog-close:hover { background: #e9e9e4; }
+    .support-dialog-close svg { width: 20px; height: 20px; }
+
+    .support-dialog h2 {
+      max-width: 10ch;
+      margin-bottom: 12px;
+      padding-right: 44px;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .support-dialog[lang="zh-CN"] h2 {
+      max-width: none;
+      font-size: clamp(1.9rem, 8vw, 2.5rem);
+      letter-spacing: -0.06em;
+    }
+
+    .support-dialog-copy { margin-bottom: 22px; color: var(--muted); }
+
+    .support-email-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 8px 8px 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--paper);
+    }
+
+    .support-email-address {
+      min-width: 0;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      user-select: all;
+    }
+
+    .support-copy-button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 0 16px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      background: var(--ink);
+      color: #ffffff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: background 180ms ease;
+    }
+
+    .support-copy-button:hover { background: #303030; }
+    .support-copy-button svg { width: 16px; height: 16px; }
+
+    .support-dialog-status {
+      margin: 14px 0 0;
+      color: #147a45;
+      font-weight: 750;
+    }
+
+    .support-dialog-status:empty { display: none; }
+
+    @keyframes dialog-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     footer {
       display: flex;
       justify-content: space-between;
@@ -388,8 +490,7 @@
     @media (max-width: 520px) {
       .shell { width: min(100% - 20px, 1080px); }
       .topbar { min-height: 68px; }
-      .brand-mark { width: 32px; height: 32px; border-radius: 10px; }
-      .brand-name { display: none; }
+      .brand { font-size: 0.92rem; }
       .hero,
       .contact { padding: 28px 20px; border-radius: 26px; }
       h1 { font-size: clamp(2.8rem, 13vw, 3.4rem); }
@@ -398,6 +499,13 @@
       .object-stage { min-height: 260px; transform: scale(0.88); margin: -12px -20px; }
       .section-block { padding-top: 72px; }
       .hero-secondary { margin-top: 72px; }
+      .support-dialog-card { padding: 28px 20px 22px; }
+      .support-email-row {
+        gap: 6px;
+        padding: 6px 6px 6px 10px;
+      }
+      .support-email-address { font-size: clamp(0.7rem, 3vw, 0.82rem); }
+      .support-copy-button { padding-inline: 10px; font-size: 0.76rem; }
       footer { flex-direction: column; }
     }
 
@@ -405,13 +513,13 @@
       html { scroll-behavior: auto; }
       .button,
       .language-nav a { transition: none; }
+      .support-dialog[open] { animation: none; }
     }
   </style>
 </head>
 <body>
   <header class="shell topbar">
     <a class="brand" href="#top" aria-label="Thingdo support home">
-      <span class="brand-mark" aria-hidden="true">!</span>
       <span class="brand-name">Thingdo · 有形清单</span>
     </a>
     <nav class="language-nav" aria-label="语言 / Language">
@@ -429,10 +537,10 @@
           Thingdo turns everyday tasks into interactive 3D objects. Find setup guidance, troubleshooting steps, and official support here.
         </p>
         <div class="actions">
-          <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">
+          <button class="button support-dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="support-dialog" data-support-locale="en">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
             Email Support
-          </a>
+          </button>
           <a class="button" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
         </div>
       </div>
@@ -476,8 +584,7 @@
       <h2>Tell us what happened.</h2>
       <p>Please include the Thingdo version, iOS version, device model, reproduction steps, and screenshots when helpful. Do not send sensitive personal information or real task content.</p>
       <div class="actions">
-        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20Support">shenshuoyouguang@outlook.com</a>
-        <a class="button button-secondary" href="../privacy-policies/thingdo/privacy-policy.html#english">Privacy Policy</a>
+        <button class="button support-dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="support-dialog" data-support-locale="en">shenshuoyouguang@outlook.com</button>
       </div>
       <dl class="meta-list">
         <div><dt>Current version</dt><dd>1.0</dd></div>
@@ -495,10 +602,10 @@
           有形清单把待办事项变成可互动的 3D 物体。这里提供使用帮助、问题排查与官方联系渠道。
         </p>
         <div class="actions">
-          <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">
+          <button class="button support-dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="support-dialog" data-support-locale="zh-CN">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
             联系技术支持
-          </a>
+          </button>
           <a class="button" href="../privacy-policies/thingdo/privacy-policy.html">查看隐私政策</a>
         </div>
       </div>
@@ -542,8 +649,7 @@
       <h2>把问题告诉我们。</h2>
       <p>邮件中建议附上 App 版本、iOS 版本、设备型号、复现步骤与截图。请不要发送敏感个人信息或真实任务内容。</p>
       <div class="actions">
-        <a class="button button-primary" href="mailto:shenshuoyouguang@outlook.com?subject=Thingdo%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">shenshuoyouguang@outlook.com</a>
-        <a class="button button-secondary" href="../privacy-policies/thingdo/privacy-policy.html">隐私政策</a>
+        <button class="button support-dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="support-dialog" data-support-locale="zh-CN">shenshuoyouguang@outlook.com</button>
       </div>
       <dl class="meta-list">
         <div><dt>当前版本</dt><dd>1.0</dd></div>
@@ -555,9 +661,88 @@
 
   </main>
 
+  <dialog class="support-dialog" id="support-dialog" aria-labelledby="support-dialog-title" lang="en">
+    <div class="support-dialog-card">
+      <button class="support-dialog-close" id="support-dialog-close" type="button" aria-label="Close contact dialog">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <p class="eyebrow" id="support-dialog-eyebrow">Thingdo Support</p>
+      <h2 id="support-dialog-title">Contact support</h2>
+      <p class="support-dialog-copy" id="support-dialog-copy">Copy the email address below to contact Thingdo Support.</p>
+      <div class="support-email-row">
+        <span class="support-email-address" id="support-email">shenshuoyouguang@outlook.com</span>
+        <button class="support-copy-button" id="copy-support-email" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+          <span id="support-copy-label">Copy email</span>
+        </button>
+      </div>
+      <p class="support-dialog-status" id="support-dialog-status" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+
   <footer class="shell">
     <p>© 2026 Haichao Zhang. Thingdo / 有形清单.</p>
     <p>Support: <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></p>
   </footer>
+  <script>
+    const supportDialog = document.querySelector("#support-dialog");
+    const supportEmail = document.querySelector("#support-email").textContent;
+    const supportStatus = document.querySelector("#support-dialog-status");
+    const supportEyebrow = document.querySelector("#support-dialog-eyebrow");
+    const supportTitle = document.querySelector("#support-dialog-title");
+    const supportCopy = document.querySelector("#support-dialog-copy");
+    const supportCopyLabel = document.querySelector("#support-copy-label");
+    const supportClose = document.querySelector("#support-dialog-close");
+    const supportContent = {
+      en: {
+        eyebrow: "Thingdo Support",
+        title: "Contact support",
+        description: "Copy the email address below to contact Thingdo Support.",
+        copy: "Copy email",
+        copied: "Email copied.",
+        close: "Close contact dialog",
+        fallback: "Copy manually: " + supportEmail
+      },
+      "zh-CN": {
+        eyebrow: "Thingdo 技术支持",
+        title: "联系技术支持",
+        description: "复制下方邮箱地址，联系我们获取技术支持。",
+        copy: "复制邮箱",
+        copied: "邮箱已复制。",
+        close: "关闭联系弹窗",
+        fallback: "请手动复制：" + supportEmail
+      }
+    };
+    let activeSupportContent = supportContent.en;
+
+    document.querySelectorAll(".support-dialog-trigger").forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        activeSupportContent = supportContent[trigger.dataset.supportLocale] || supportContent.en;
+        supportDialog.lang = trigger.dataset.supportLocale || "en";
+        supportEyebrow.textContent = activeSupportContent.eyebrow;
+        supportTitle.textContent = activeSupportContent.title;
+        supportCopy.textContent = activeSupportContent.description;
+        supportCopyLabel.textContent = activeSupportContent.copy;
+        supportClose.setAttribute("aria-label", activeSupportContent.close);
+        supportStatus.textContent = "";
+        supportDialog.showModal();
+      });
+    });
+
+    supportClose.addEventListener("click", () => supportDialog.close());
+
+    supportDialog.addEventListener("click", (event) => {
+      if (event.target === supportDialog) supportDialog.close();
+    });
+
+    document.querySelector("#copy-support-email").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(supportEmail);
+        supportStatus.textContent = activeSupportContent.copied;
+      } catch {
+        supportStatus.textContent = activeSupportContent.fallback;
+      }
+    });
+  </script>
 </body>
 </html>
