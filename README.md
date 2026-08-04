@@ -1,6 +1,6 @@
 # iOS App Support Repository
 
-This repository hosts public support and privacy content for the InterBeat and Thingdo iOS apps.
+This repository hosts public support, privacy, and terms-of-service content for the InterBeat, Thingdo, and KeepsakeAtlas iOS apps.
 
 ## Files
 
