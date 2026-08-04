@@ -11,6 +11,8 @@ This repository hosts public support, privacy, and terms-of-service content for 
 - `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
 - `privacy-policies/thingdo/privacy-policy.html`: public bilingual privacy policy page for Thingdo / 有形清单
 - `privacy-policies/thingdo/privacy-policy.md`: editable Markdown source for the Thingdo privacy policy
+- `privacy-policies/keepsakeatlas/privacy-policy.html`: public bilingual privacy policy page for KeepsakeAtlas / 映册
+- `privacy-policies/keepsakeatlas/privacy-policy.md`: editable Markdown source for the KeepsakeAtlas privacy policy
 - `terms-of-service/keepsakeatlas/terms-of-service.html`: public bilingual Terms of Service page for KeepsakeAtlas / 映册
 - `terms-of-service/keepsakeatlas/terms-of-service.md`: editable Markdown source for the KeepsakeAtlas Terms of Service
 - `github-pages-tutorial.html`: public GitHub Pages tutorial
@@ -27,6 +29,7 @@ Use the matching hosted privacy policy page as the `Privacy Policy URL`.
 
 - InterBeat: `https://hayden-chang.github.io/support/privacy-policies/interfit/privacy-policy.html`
 - Thingdo / 有形清单: `https://hayden-chang.github.io/support/privacy-policies/thingdo/privacy-policy.html`
+- KeepsakeAtlas / 映册: `https://hayden-chang.github.io/support/privacy-policies/keepsakeatlas/privacy-policy.html`
 
 Use the matching hosted Terms of Service page as the `Terms of Use (EULA)` URL.
 
