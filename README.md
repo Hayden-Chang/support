@@ -11,6 +11,8 @@ This repository hosts public support and privacy content for the InterBeat and T
 - `privacy-policies/interfit/privacy-policy.md`: editable Markdown source for the privacy policy
 - `privacy-policies/thingdo/privacy-policy.html`: public bilingual privacy policy page for Thingdo / 有形清单
 - `privacy-policies/thingdo/privacy-policy.md`: editable Markdown source for the Thingdo privacy policy
+- `privacy-policies/keepsakeatlas/privacy-policy.html`: public bilingual privacy policy page for KeepsakeAtlas / 映册
+- `privacy-policies/keepsakeatlas/privacy-policy.md`: editable Markdown source for the KeepsakeAtlas privacy policy
 - `github-pages-tutorial.html`: public GitHub Pages tutorial
 - `github-pages-tutorial.md`: Markdown source for the tutorial
 
@@ -25,9 +27,11 @@ Use the matching hosted privacy policy page as the `Privacy Policy URL`.
 
 - InterBeat: `https://hayden-chang.github.io/support/privacy-policies/interfit/privacy-policy.html`
 - Thingdo / 有形清单: `https://hayden-chang.github.io/support/privacy-policies/thingdo/privacy-policy.html`
+- KeepsakeAtlas / 映册: `https://hayden-chang.github.io/support/privacy-policies/keepsakeatlas/privacy-policy.html`
 
 ## Notes
 
 - Support contact for InterBeat: `shenshuoyouguang@outlook.com`
 - Support contact for Thingdo: `shenshuoyouguang@outlook.com`
+- Support contact for KeepsakeAtlas: `shenshuoyouguang@outlook.com`
 - Keep the support page and privacy policy aligned with the app's actual behavior and review notes
