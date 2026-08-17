@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="映册（KeepsakeAtlas）官方技术支持：获取备份、会员和问题反馈帮助，并联系支持团队。"
+  >
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <title>映册技术支持 | KeepsakeAtlas Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f3ec;
+      --surface: #fffdf8;
+      --surface-strong: #ffffff;
+      --text: #172722;
+      --muted: #566761;
+      --accent: #087a68;
+      --on-accent: #ffffff;
+      --accent-strong: #055c4e;
+      --accent-soft: #dff2eb;
+      --line: #d7e0dc;
+      --focus: #b34d1f;
+      --shadow: rgb(23 39 34 / 10%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #101714;
+        --surface: #18211e;
+        --surface-strong: #1d2824;
+        --text: #f3f6f4;
+        --muted: #b7c5bf;
+        --accent: #75d5bd;
+        --on-accent: #0b2a22;
+        --accent-strong: #a2ead7;
+        --accent-soft: #213c34;
+        --line: #354740;
+        --focus: #ffad7c;
+        --shadow: rgb(0 0 0 / 28%);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 12% 0%, rgb(8 122 104 / 13%), transparent 30rem),
+        var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-underline-offset: 0.18em;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 6px;
+    }
+
+    .shell {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 76px;
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 760;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .support-label {
+      padding: 6px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 18px 0 64px;
+    }
+
+    .hero {
+      padding: clamp(28px, 7vw, 72px);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgb(8 122 104 / 12%), transparent 54%),
+        var(--surface-strong);
+      box-shadow: 0 24px 70px var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      max-width: 11ch;
+      margin-bottom: 16px;
+      font-family: Georgia, "Times New Roman", "Songti SC", serif;
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      font-weight: 650;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+    }
+
+    h3 {
+      margin-bottom: 9px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .hero-copy {
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.16rem);
+    }
+
+    .hero-copy span {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.94em;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 19px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--accent-strong);
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .button-primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--on-accent);
+      box-shadow: 0 10px 28px rgb(8 122 104 / 24%);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px var(--shadow);
+    }
+
+    .section-heading {
+      margin: 56px 0 20px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: 0 12px 34px rgb(23 39 34 / 6%);
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card ul {
+      margin: 12px 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .card li + li {
+      margin-top: 6px;
+    }
+
+    .card .english {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    summary {
+      min-height: 56px;
+      padding: 16px 52px 16px 20px;
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    details p {
+      padding: 0 20px 20px;
+      color: var(--muted);
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+      margin-top: 56px;
+      padding: clamp(24px, 5vw, 40px);
+      border-radius: 22px;
+      background: var(--accent-soft);
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+    }
+
+    .contact-meta {
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 28px 0 38px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 700px) {
+      .card-grid,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .actions,
+      .button {
+        width: 100%;
+      }
+
+      .hero {
+        border-radius: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell site-header">
+    <a class="brand" href="./">映册 · KeepsakeAtlas</a>
+    <span class="support-label">技术支持 · Support</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="support-title">
+      <p class="eyebrow">KeepsakeAtlas Support</p>
+      <h1 id="support-title">让每一件收藏，都被好好保存。</h1>
+      <p class="hero-copy">
+        映册帮助你用照片整理、记录和展示实体收藏。遇到问题时，可以在这里找到帮助或直接联系我们。
+        <span lang="en">Organize, record, and exhibit your collections with photos. Find help here or contact us directly.</span>
+      </p>
+      <div class="actions">
+        <a
+          class="button button-primary"
+          href="mailto:shenshuoyouguang@outlook.com?subject=KeepsakeAtlas%20Support%20%2F%20%E6%98%A0%E5%86%8C%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81"
+        >联系技术支持 / Contact Support</a>
+        <a class="button" href="#faq">查看常见问题 / View FAQ</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="help-title">
+      <div class="section-heading">
+        <h2 id="help-title">快速帮助</h2>
+        <p lang="en">Quick help for the most common questions.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>反馈 Bug</h3>
+          <p>在 App 的“设置”中选择“有 Bug”，或发送邮件给我们。请尽量附上：</p>
+          <ul>
+            <li>设备型号、iOS 版本和映册版本</li>
+            <li>问题发生前的操作步骤</li>
+            <li>相关截图或录屏</li>
+          </ul>
+          <p class="english" lang="en">Report a bug from Settings, and include your device, iOS and app versions, reproduction steps, and screenshots when possible.</p>
+        </article>
+
+        <article class="card">
+          <h3>备份与恢复</h3>
+          <p>在 App 的“设置”中使用“导出备份”保存数据；需要恢复时选择“导入备份”。请妥善保存导出的 <code>.collect</code> 文件。</p>
+          <p class="english" lang="en">Use Export Backup in Settings to save your data and Import Backup to restore it. Keep the exported <code>.collect</code> file in a safe place.</p>
+        </article>
+
+        <article class="card">
+          <h3>会员与订阅</h3>
+          <p>在 App 的“设置”中选择“管理会员”，即可查看或管理订阅。退款由 Apple 处理，请通过 Apple 的购买记录申请。</p>
+          <p class="english" lang="en">Choose Manage Membership in Settings to view or manage a subscription. Apple handles billing and refund requests.</p>
+        </article>
+
+        <article class="card">
+          <h3>提出建议</h3>
+          <p>欢迎告诉我们你希望新增的收藏字段、照片墙主题或其他体验改进。发送邮件时，请说明你的使用场景。</p>
+          <p class="english" lang="en">Feature ideas are welcome. Tell us what you collect and how the improvement would help your workflow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <h2 id="faq-title">常见问题 · FAQ</h2>
+        <p>以下信息同时适用于中文版和英文版映册。</p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>映册需要注册账号吗？ / Does KeepsakeAtlas require an account?</summary>
+          <p>不需要。映册无需注册或登录即可使用。<span lang="en"> No. You can use KeepsakeAtlas without registering or signing in.</span></p>
+        </details>
+
+        <details>
+          <summary>照片和收藏数据存在哪里？ / Where is my data stored?</summary>
+          <p>照片、收藏记录和相关内容保存在你的设备本地。建议定期使用“导出备份”，并将备份文件保存到安全的位置。<span lang="en"> Your photos and collection records are stored locally on your device. Export a backup regularly and keep it somewhere safe.</span></p>
+        </details>
+
+        <details>
+          <summary>为什么无法导入备份？ / Why can’t I import a backup?</summary>
+          <p>请确认文件由映册的“导出备份”功能生成、保留 <code>.collect</code> 扩展名，并且没有被解压或修改。如果问题仍然存在，请连同错误截图联系我们。<span lang="en"> Make sure the file was created by Export Backup, still uses the <code>.collect</code> extension, and was not extracted or modified. Contact us with a screenshot if the issue continues.</span></p>
+        </details>
+
+        <details>
+          <summary>如何取消订阅？ / How do I cancel a subscription?</summary>
+          <p>打开 iPhone“设置”→ 你的 Apple ID →“订阅”，选择映册后管理或取消订阅。<span lang="en"> Open iPhone Settings → your Apple ID → Subscriptions, then choose KeepsakeAtlas to manage or cancel it.</span></p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-panel" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">仍然需要帮助？</h2>
+        <p>发送邮件给我们，我们会尽快回复。</p>
+        <p lang="en">Still need help? Email us and we’ll respond as soon as we can.</p>
+        <p class="contact-meta">运营者 / Operator：张海超（Haichao Zhang） · 中国 / China</p>
+      </div>
+      <a
+        class="button button-primary"
+        href="mailto:shenshuoyouguang@outlook.com?subject=KeepsakeAtlas%20Support%20%2F%20%E6%98%A0%E5%86%8C%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81"
+      >shenshuoyouguang@outlook.com</a>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© 2026 KeepsakeAtlas · Updated 2026-08-18</span>
+    <nav class="footer-links" aria-label="Legal and product links">
+      <a href="../privacy-policies/keepsakeatlas/privacy-policy.html">隐私政策 / Privacy Policy</a>
+      <a href="../terms-of-service/keepsakeatlas/terms-of-service.html">服务条款 / Terms of Service</a>
+      <a href="https://apps.apple.com/app/id6797578859">App Store</a>
+    </nav>
+  </footer>
+</body>
+</html>
