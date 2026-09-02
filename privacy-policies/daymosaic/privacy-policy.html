@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for DayMosaic, in English and Simplified Chinese.">
+  <meta name="robots" content="index, follow">
+  <title>Privacy Policy | DayMosaic</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f1ec;
+      --surface: #fffdf8;
+      --text: #211f26;
+      --muted: #66616d;
+      --line: #ded8e2;
+      --accent: #6844d6;
+      --soft: #eee8ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #131216;
+        --surface: #1d1b21;
+        --text: #f5f1f8;
+        --muted: #b8b1bf;
+        --line: #3b3740;
+        --accent: #b79cff;
+        --soft: #302747;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.72 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 6vw, 64px);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgb(0 0 0 / 8%);
+    }
+    h1, h2, h3 { line-height: 1.3; letter-spacing: -0.02em; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.25rem); }
+    h2 {
+      margin: 2.4em 0 0.75em;
+      padding-bottom: 0.35em;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.45rem;
+    }
+    h3 { margin: 1.8em 0 0.5em; font-size: 1.08rem; }
+    p, ul { margin: 0.75em 0; }
+    li + li { margin-top: 0.45em; }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    code { padding: 0.1em 0.35em; background: var(--soft); border-radius: 5px; }
+    .subtitle, .meta { color: var(--muted); }
+    .subtitle { margin: 0 0 20px; font-size: 1.1rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 4px 16px;
+      margin: 20px 0 28px;
+    }
+    .meta dt { font-weight: 700; }
+    .meta dd { margin: 0; }
+    .language-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0; }
+    .language-nav a {
+      padding: 7px 12px;
+      background: var(--soft);
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .notice {
+      margin: 28px 0;
+      padding: 17px 19px;
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+    }
+    .language-section + .language-section {
+      margin-top: 72px;
+      padding-top: 56px;
+      border-top: 3px solid var(--line);
+    }
+    .section-label {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (max-width: 560px) {
+      main { width: 100%; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+      .meta { grid-template-columns: 1fr; gap: 0; }
+      .meta dd + dt { margin-top: 10px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      main { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
+      .language-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="english" class="language-section" lang="en">
+      <span class="section-label">English</span>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">DayMosaic</p>
+      <dl class="meta">
+        <dt>Effective date</dt><dd>September 2, 2026</dd>
+        <dt>App version</dt><dd>Beta</dd>
+        <dt>Operator</dt><dd>Haichao Zhang (张海超), China</dd>
+        <dt>Contact</dt><dd><a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></dd>
+      </dl>
+      <nav class="language-nav" aria-label="Language selection">
+        <a href="#english">English</a><a href="#chinese" lang="zh-CN">简体中文</a>
+      </nav>
+      <div class="notice"><strong>Summary:</strong> DayMosaic stores tasks, schedules, event copies, focus records, and settings locally. Optional AI planning sends your instruction and relevant plan to <code>api.keeline.xyz</code>, which uses an external AI model provider. The App does not change your real schedule until you apply the proposal. Raw AI requests and outputs are retained for no more than 30 days. The App does not use advertising or cross-app tracking.</div>
+
+      <h2>1. Local information</h2>
+      <p>The App stores in its local iOS sandbox:</p>
+      <ul>
+        <li>task titles, notes, durations, repeat rules, priority or pinned state, and completion state;</li>
+        <li>task occurrences, schedules, dates, time segments, and placement state;</li>
+        <li>external-event copies you choose to add, including titles, dates, durations, time segments, all-day state, and fixed state;</li>
+        <li>focus-session timing and status, App settings, and a random AI guest installation identifier.</li>
+      </ul>
+      <p>This information stays on your device unless you use AI planning, contact support, or include it in a backup you control. Avoid entering sensitive information that is not needed for planning.</p>
+
+      <h2>2. Optional AI planning</h2>
+      <p>AI planning is optional. Before planning content is sent for the first time, the App displays a disclosure and asks for your agreement. If you decline, non-AI features remain available. AI output is a temporary proposal and does not change your real tasks or schedule until you review and apply it.</p>
+      <p>When you agree and request a plan, the App sends to <code>https://api.keeline.xyz</code>:</p>
+      <ul>
+        <li>your planning instruction;</li>
+        <li>the selected date, current date and time, and any earliest-start setting;</li>
+        <li>relevant task and external-event titles, durations, time segments, and completion, pinned, all-day, or fixed states;</li>
+        <li>internal item references, a request identifier, and a planning-baseline fingerprint used for validation; and</li>
+        <li>a random installation identifier used for a temporary guest token and AI quota.</li>
+      </ul>
+      <p>The Beta AI feature requires no account. The installation identifier is not your Apple ID, advertising identifier, phone number, email address, or precise location. Reinstalling may generate a new identifier.</p>
+
+      <h2>3. External AI model provider</h2>
+      <p>The service uses an external AI model provider to interpret your instruction and propose structured planning operations. The provider receives a reduced projection containing your instruction, current date and time, and relevant plan items with scheduling fields.</p>
+      <p>Before sending it, the service removes the App request identifier, baseline fingerprint, and real domain references. The provider does not receive the App installation identifier from us. The provider or model may change as we maintain the service. We do not authorize use of DayMosaic content for advertising or cross-app tracking.</p>
+
+      <h2>4. Server processing and retention</h2>
+      <p>The service validates requests, enforces a per-installation quota, calls the provider, converts output into structured operations, runs deterministic scheduling and validation, and returns a proposal for review.</p>
+      <p>For a model-backed request, the service may store a pseudonymous key; request identifier, route, pipeline, timestamps, status, and duration; request and response content; model-call input and output, model metadata, errors, call count, and token counts.</p>
+      <p>Raw API request and response content and raw model-call input and output are removed after no more than 30 days. Pseudonymous keys, request identifiers, status, timing, call counts, token metadata, and quota records may remain as reasonably necessary to operate quotas, secure and troubleshoot the service, investigate abuse, and maintain aggregate reliability. Authorization headers and guest Bearer tokens are not persisted in these records.</p>
+      <p>Local App information remains until you delete it, reset the relevant data, or delete the App, subject to backups controlled by you or Apple.</p>
+
+      <h2>5. Purposes and disclosure</h2>
+      <p>We process information only to provide App features; authenticate guest AI requests; enforce quotas; generate and validate requested proposals; prevent duplicate or abusive requests; maintain security and reliability; respond to support; and comply with law.</p>
+      <p>We may disclose only what is necessary to infrastructure and network providers, the external AI model provider, Microsoft for support email, GitHub for this page, and parties when required by law or necessary to protect rights, safety, and security.</p>
+      <p>We do not serve ads, build advertising profiles, sell or rent personal information, share it for cross-context behavioral advertising, or track you across other companies' apps or websites.</p>
+
+      <h2>6. Apple, support, and this page</h2>
+      <p>Apple may independently process App Store activity, backups, and user-authorized diagnostics under your settings and the <a href="https://www.apple.com/legal/privacy/" rel="external noreferrer">Apple Privacy Policy</a>. We cannot access or control backups managed by you or Apple.</p>
+      <p>If you email us, we receive the information you provide. Outlook may process it under the <a href="https://privacy.microsoft.com/en-us/privacystatement" rel="external noreferrer">Microsoft Privacy Statement</a>.</p>
+      <p>This page is hosted by GitHub Pages. We add no advertising, analytics, or tracking scripts. GitHub may process technical logs under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external noreferrer">General Privacy Statement</a>.</p>
+
+      <h2>7. International processing and legal bases</h2>
+      <p>The operator is in China. Providers may process information in other regions where they operate. Where required, we rely as applicable on consent for optional AI processing, performance of requested features or support, permitted legitimate interests in securing and operating the service, and legal obligations. We apply required cross-border safeguards.</p>
+
+      <h2>8. Your choices and rights</h2>
+      <p>You can use the App without AI planning, decline the disclosure, review a proposal without applying it, delete local information using available controls, or delete the App.</p>
+      <p>Email <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a> to request access, correction, deletion, restriction, an explanation, or withdrawal of consent where applicable. Because there is no account and the server uses a pseudonymous installation key, App information or a support code may be needed to locate a record.</p>
+
+      <h2>9. Children, security, and changes</h2>
+      <p>DayMosaic is not directed to children. We do not knowingly collect personal information from children through the App, including children under 14 in China, under 13 in the United States, or below the applicable minimum age elsewhere.</p>
+      <p>Risk-reduction measures include iOS sandboxing, HTTPS, temporary guest tokens, pseudonymous server keys, restricted management endpoints, and time-limited raw-content retention. No method is completely secure.</p>
+      <p>We may update this Policy when the App, provider arrangement, practices, or law changes. We will post the new version here, revise the date, and provide additional notice or consent when required.</p>
+
+      <h2>10. Contact</h2>
+      <p>Haichao Zhang (张海超), China · <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></p>
+    </section>
+
+    <section id="chinese" class="language-section" lang="zh-CN">
+      <span class="section-label">简体中文</span>
+      <h1>隐私政策</h1>
+      <p class="subtitle">DayMosaic</p>
+      <dl class="meta">
+        <dt>生效日期</dt><dd>2026 年 9 月 2 日</dd>
+        <dt>应用版本</dt><dd>Beta 版</dd>
+        <dt>运营者</dt><dd>张海超（Haichao Zhang），中国</dd>
+        <dt>联系方式</dt><dd><a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></dd>
+      </dl>
+      <nav class="language-nav" aria-label="语言选择">
+        <a href="#english" lang="en">English</a><a href="#chinese">简体中文</a>
+      </nav>
+      <div class="notice"><strong>摘要：</strong>DayMosaic 会在设备本地保存任务、日程、外部事件副本、专注记录和设置。可选 AI 规划会将您的要求及相关计划发送至 <code>api.keeline.xyz</code>，并由外部 AI 模型服务商协助生成建议。您选择“应用”前不会改动真实日程。AI 原始请求与输出最长保留 30 天。本应用不投放广告，也不进行跨应用追踪。</div>
+
+      <h2>一、设备本地信息</h2>
+      <p>本应用会在 iOS 本地沙盒中保存任务标题、备注、时长、重复规则、优先级或固定状态、完成状态；任务实例、日程、日期、时间片段和排期状态；您选择加入的外部事件副本；专注会话；应用设置；以及随机生成的 AI 访客安装标识。</p>
+      <p>除非您使用下述 AI 功能、主动发送支持信息，或使用由您控制的备份，上述信息会留在设备上。请勿输入规划不需要的敏感信息。</p>
+
+      <h2>二、可选 AI 规划</h2>
+      <p>AI 规划是可选功能。首次发送规划内容前，本应用会展示处理说明并征求同意。拒绝后仍可使用非 AI 功能。AI 返回的是临时建议；只有您审阅并主动“应用”后才会写入真实任务或日程。</p>
+      <p>当您同意并要求生成计划时，本应用会向 <code>https://api.keeline.xyz</code> 发送规划要求；所选日期、当前日期和时间及可选最早开始时间；相关任务和外部事件的标题、时长、时间片段和状态；用于校验的内部项目引用、请求标识和规划基线指纹；以及用于临时访客令牌和 AI 配额的随机安装标识。</p>
+      <p>Beta 版 AI 功能不要求账号。安装标识不是 Apple ID、广告标识符、电话号码、邮箱或精确位置。重新安装后可能生成新标识。</p>
+
+      <h2>三、外部 AI 模型服务商</h2>
+      <p>服务端使用外部 AI 模型服务商理解要求并提出结构化操作。服务商收到裁剪后的规划信息：您的要求、当前日期和时间，以及相关计划项目与排期字段。</p>
+      <p>发送前，服务端会移除应用请求标识、基线指纹和真实领域引用。我们不会向模型服务商提供本应用安装标识。具体模型或服务商可能随维护调整；我们不授权其将 DayMosaic 内容用于广告或跨应用追踪。</p>
+
+      <h2>四、服务端处理与保存期限</h2>
+      <p>服务端会校验请求、执行配额、调用模型、转换结构化操作、运行确定性排期和校验，再返回供您审阅的建议。</p>
+      <p>每次调用模型时，服务端可能保存化名设备键；请求标识、路由、处理管线、时间戳、状态和耗时；请求与响应内容；模型调用输入输出、模型元数据、错误、调用次数及 Token 数量。</p>
+      <p>API 原始请求与响应、模型调用原始输入与输出会在最长 30 天后移除。化名键、请求标识、状态、耗时、调用次数、Token 元数据和配额记录，可能在执行配额、保障安全、排查故障、调查滥用和维护汇总可靠性所合理需要的期限内继续保存。运维记录不持久保存授权请求头或访客 Bearer 令牌。</p>
+      <p>本地信息保留至您将其删除、重置相关数据或删除本应用，但由您或 Apple 控制的备份除外。</p>
+
+      <h2>五、目的与披露</h2>
+      <p>我们仅为提供应用功能、验证 AI 请求、执行配额、生成和校验建议、防止重复或滥用、维护安全可靠性、回复支持及履行法律义务而处理信息。</p>
+      <p>我们仅在必要范围内向基础设施和网络服务商、外部 AI 模型服务商、Microsoft、GitHub，以及法律要求或保护权利与安全所必需的主体披露信息。</p>
+      <p>我们不投放广告、不建立广告画像、不出售或出租个人信息、不为跨场景行为广告共享个人信息，也不跨其他公司的应用或网站追踪您。</p>
+
+      <h2>六、Apple、支持与本页面</h2>
+      <p>Apple 可能依据您的设置及 <a href="https://www.apple.com/legal/privacy/" rel="external noreferrer">Apple 隐私政策</a> 独立处理 App Store 活动、备份和您授权的诊断。我们无法访问或控制由您或 Apple 管理的备份。</p>
+      <p>如果您发送邮件，我们会收到您提供的信息。Outlook 可能依据 <a href="https://privacy.microsoft.com/en-us/privacystatement" rel="external noreferrer">Microsoft 隐私声明</a> 处理邮件数据。</p>
+      <p>本页面由 GitHub Pages 托管，我们未加入广告、分析或追踪脚本。GitHub 可能依据其 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external noreferrer">一般隐私声明</a> 处理技术日志。</p>
+
+      <h2>七、法律依据与跨境处理</h2>
+      <p>运营者位于中国，服务商可能在其他地区处理信息。法律要求时，我们会视情形依据您对可选 AI 处理的同意、履行您要求的功能或支持、法律允许的服务安全运营权益及法定义务，并采取所需跨境保障。</p>
+
+      <h2>八、您的选择与权利</h2>
+      <p>您可以不使用 AI 规划、拒绝处理说明、审阅建议但不应用、使用应用内控制删除本地信息，或删除本应用。</p>
+      <p>您可以联系 <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a> 请求访问、更正、删除、限制、解释或依法撤回同意。由于没有账号且服务端使用化名安装键，我们可能需要应用内信息或支持代码来定位记录。</p>
+
+      <h2>九、儿童、安全与变更</h2>
+      <p>DayMosaic 并非面向儿童。我们不会有意通过本应用收集儿童个人信息，包括中国境内不满 14 周岁、美国境内不满 13 周岁，或其他地区低于适用最低年龄的儿童。</p>
+      <p>降低风险的措施包括 iOS 沙盒、HTTPS、临时访客令牌、化名服务端键、受限管理端点和限定原始内容保存期限。任何方式都无法保证绝对安全。</p>
+      <p>应用、服务商安排、处理方式或法律变化时，我们可能更新本政策，在本网址发布并修改生效日期；法律要求时会另行通知或征求同意。</p>
+
+      <h2>十、联系我们</h2>
+      <p>张海超（Haichao Zhang），中国 · <a href="mailto:shenshuoyouguang@outlook.com">shenshuoyouguang@outlook.com</a></p>
+    </section>
+    <footer>DayMosaic Privacy Policy · <a href="mailto:shenshuoyouguang@outlook.com">Contact support</a></footer>
+  </main>
+</body>
+</html>
