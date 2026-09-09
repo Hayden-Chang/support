@@ -1,6 +1,6 @@
 # DayMosaic Terms of Service / DayMosaic 服务条款
 
-Effective date: 2026-09-09  
+Effective date: 2026-09-09
 Last updated: 2026-09-09
 
 ## English
