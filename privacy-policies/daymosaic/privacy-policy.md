@@ -3,7 +3,7 @@
 DayMosaic
 
 - **Effective date:** September 2, 2026
-- **App version:** Beta
+- **App version:** 1.0.0
 - **Operator:** Haichao Zhang (张海超), China
 - **Contact:** <shenshuoyouguang@outlook.com>
 
@@ -34,7 +34,7 @@ When you agree and request a plan, the App sends to `https://api.keeline.xyz`:
 - internal item references, a request identifier, and a planning-baseline fingerprint used to validate the proposal; and
 - a random installation identifier used to issue a temporary guest token and enforce the AI quota.
 
-The Beta AI feature requires no account. The installation identifier is not your Apple ID, advertising identifier, phone number, email address, or precise location. Reinstalling the App may generate a new identifier.
+The AI feature requires no account. The installation identifier is not your Apple ID, advertising identifier, phone number, email address, or precise location. Reinstalling the App may generate a new identifier.
 
 ## 3. External AI model provider
 
@@ -101,7 +101,7 @@ We may update this Policy when the App, provider arrangement, practices, or law 
 DayMosaic
 
 - **生效日期：**2026 年 9 月 2 日
-- **应用版本：**Beta 版
+- **应用版本：**1.0.0
 - **运营者：**张海超（Haichao Zhang），中国
 - **联系方式：**<shenshuoyouguang@outlook.com>
 
@@ -119,7 +119,7 @@ AI 规划是可选功能。首次发送规划内容前，本应用会展示处�
 
 当您同意并要求生成计划时，本应用会向 `https://api.keeline.xyz` 发送：您的规划要求；所选日期、当前日期和时间及可选最早开始时间；相关任务和外部事件的标题、时长、时间片段、完成、固定、全天等状态；用于校验建议的内部项目引用、请求标识和规划基线指纹；以及用于临时访客令牌和 AI 配额的随机安装标识。
 
-Beta 版 AI 功能不要求账号。安装标识不是 Apple ID、广告标识符、电话号码、邮箱或精确位置。重新安装后可能生成新标识。
+AI 功能不要求账号。安装标识不是 Apple ID、广告标识符、电话号码、邮箱或精确位置。重新安装后可能生成新标识。
 
 ## 三、外部 AI 模型服务商
 

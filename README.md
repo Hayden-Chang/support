@@ -15,6 +15,10 @@ This repository hosts public support, privacy, and terms-of-service content for 
 - `privacy-policies/keepsakeatlas/privacy-policy.md`: editable Markdown source for the KeepsakeAtlas privacy policy
 - `privacy-policies/daymosaic/privacy-policy.html`: public bilingual privacy policy page for DayMosaic
 - `privacy-policies/daymosaic/privacy-policy.md`: editable Markdown source for the DayMosaic privacy policy
+- `daymosaic/index.html`: public bilingual support page for DayMosaic
+- `daymosaic/favicon.svg`: page-specific favicon for the DayMosaic support page
+- `terms-of-service/daymosaic/terms-of-service.html`: public bilingual Terms of Service page for DayMosaic
+- `terms-of-service/daymosaic/terms-of-service.md`: editable Markdown source for the DayMosaic Terms of Service
 - `terms-of-service/keepsakeatlas/terms-of-service.html`: public bilingual Terms of Service page for KeepsakeAtlas / 映册
 - `terms-of-service/keepsakeatlas/terms-of-service.md`: editable Markdown source for the KeepsakeAtlas Terms of Service
 - `github-pages-tutorial.html`: public GitHub Pages tutorial
@@ -26,6 +30,7 @@ Use the support page that matches the app as the `Support URL`.
 
 - InterBeat: `https://hayden-chang.github.io/support/`
 - Thingdo / 有形清单: `https://hayden-chang.github.io/support/thingdo/`
+- DayMosaic: `https://hayden-chang.github.io/support/daymosaic/`
 
 Use the matching hosted privacy policy page as the `Privacy Policy URL`.
 
@@ -37,6 +42,7 @@ Use the matching hosted privacy policy page as the `Privacy Policy URL`.
 Use the matching hosted Terms of Service page as the `Terms of Use (EULA)` URL.
 
 - KeepsakeAtlas / 映册: `https://hayden-chang.github.io/support/terms-of-service/keepsakeatlas/terms-of-service.html`
+- DayMosaic: `https://hayden-chang.github.io/support/terms-of-service/daymosaic/terms-of-service.html`
 
 ## Notes
 

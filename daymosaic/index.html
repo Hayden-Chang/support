@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="DayMosaic 官方技术支持：获取 AI 规划、提醒、隐私和问题反馈帮助，并联系支持团队。"
+  >
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <title>DayMosaic 技术支持 | DayMosaic Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4f1ec;
+      --surface: #fffdf8;
+      --surface-strong: #ffffff;
+      --text: #211f26;
+      --muted: #66616d;
+      --accent: #6844d6;
+      --on-accent: #ffffff;
+      --accent-strong: #4f2fbf;
+      --accent-soft: #eee8ff;
+      --line: #ded8e2;
+      --focus: #e05a47;
+      --shadow: rgb(33 31 38 / 10%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #131216;
+        --surface: #1d1b21;
+        --surface-strong: #24212a;
+        --text: #f5f1f8;
+        --muted: #b8b1bf;
+        --accent: #b79cff;
+        --on-accent: #131216;
+        --accent-strong: #d5c7ff;
+        --accent-soft: #302747;
+        --line: #3b3740;
+        --focus: #ffad7c;
+        --shadow: rgb(0 0 0 / 28%);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 12% 0%, rgb(104 68 214 / 13%), transparent 30rem),
+        var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-underline-offset: 0.18em;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 6px;
+    }
+
+    .shell {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 76px;
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 760;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .support-label {
+      padding: 6px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 18px 0 64px;
+    }
+
+    .hero {
+      padding: clamp(28px, 7vw, 72px);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgb(104 68 214 / 12%), transparent 54%),
+        var(--surface-strong);
+      box-shadow: 0 24px 70px var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      max-width: 11ch;
+      margin-bottom: 16px;
+      font-family: Georgia, "Times New Roman", "Songti SC", serif;
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      font-weight: 650;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+    }
+
+    h3 {
+      margin-bottom: 9px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .hero-copy {
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.16rem);
+    }
+
+    .hero-copy span {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.94em;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 19px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--accent-strong);
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .button-primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--on-accent);
+      box-shadow: 0 10px 28px rgb(104 68 214 / 24%);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px var(--shadow);
+    }
+
+    .section-heading {
+      margin: 56px 0 20px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: 0 12px 34px rgb(33 31 38 / 6%);
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card ul {
+      margin: 12px 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .card li + li {
+      margin-top: 6px;
+    }
+
+    .card .english {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    summary {
+      min-height: 56px;
+      padding: 16px 52px 16px 20px;
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    details p {
+      padding: 0 20px 20px;
+      color: var(--muted);
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+      margin-top: 56px;
+      padding: clamp(24px, 5vw, 40px);
+      border-radius: 22px;
+      background: var(--accent-soft);
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+    }
+
+    .contact-meta {
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 28px 0 38px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 700px) {
+      .card-grid,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .actions,
+      .button {
+        width: 100%;
+      }
+
+      .hero {
+        border-radius: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell site-header">
+    <a class="brand" href="./">DayMosaic · 拼拼日程</a>
+    <span class="support-label">技术支持 · Support</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="support-title">
+      <p class="eyebrow">DayMosaic Support</p>
+      <h1 id="support-title">把一天，拼成清晰可行的计划。</h1>
+      <p class="hero-copy">
+        DayMosaic 帮你安排任务、日程和专注。遇到问题时，可以在这里找到帮助或直接联系我们。
+        <span lang="en">Plan tasks, schedules, and focus with DayMosaic. Find help here or contact us directly.</span>
+      </p>
+      <div class="actions">
+        <a
+          class="button button-primary"
+          href="mailto:shenshuoyouguang@outlook.com?subject=DayMosaic%20Support%20%2F%20%E6%8B%BC%E6%8B%BC%E6%97%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81"
+        >联系技术支持 / Contact Support</a>
+        <a class="button" href="#faq">查看常见问题 / View FAQ</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="help-title">
+      <div class="section-heading">
+        <h2 id="help-title">快速帮助</h2>
+        <p lang="en">Quick help for the most common questions.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>反馈问题</h3>
+          <p>发送邮件给我们时，请尽量附上：</p>
+          <ul>
+            <li>设备型号、iOS 版本和 DayMosaic 版本</li>
+            <li>问题发生前的操作步骤</li>
+            <li>相关截图或录屏，以及 AI 支持码（如有）</li>
+          </ul>
+          <p class="english" lang="en">Include your device, iOS and app versions, reproduction steps, screenshots, and the AI support code when available.</p>
+        </article>
+
+        <article class="card">
+          <h3>AI 规划</h3>
+          <p>AI 规划是可选功能，首次使用会先展示数据处理说明并征求同意。AI 只会生成临时建议，点击“应用”前不会改动真实日程。</p>
+          <p class="english" lang="en">AI planning is optional. The first use shows a data disclosure and asks for consent. A proposal does not change your real schedule until you apply it.</p>
+        </article>
+
+        <article class="card">
+          <h3>提醒与通知</h3>
+          <p>如果每日提醒没有按时出现，请检查 iPhone“设置”&gt;“通知”&gt;“DayMosaic”，并确认 App 内提醒已开启且没有被系统专注模式拦截。</p>
+          <p class="english" lang="en">If a reminder does not appear, check iPhone Settings &gt; Notifications &gt; DayMosaic, confirm reminders are enabled in the App, and review Focus settings.</p>
+        </article>
+
+        <article class="card">
+          <h3>数据与隐私</h3>
+          <p>任务、日程、专注记录和设置默认保存在设备本地。只有你使用 AI 规划时，相关规划信息才会发送到 DayMosaic 服务及其外部 AI 模型服务商。</p>
+          <p class="english" lang="en">Tasks, schedules, focus records, and settings are stored locally. Relevant planning information is sent to DayMosaic and its external AI model provider only when you use AI planning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <h2 id="faq-title">常见问题 · FAQ</h2>
+        <p>以下信息同时适用于中文版和英文版 DayMosaic。</p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>DayMosaic 需要注册账号吗？ / Does DayMosaic require an account?</summary>
+          <p>不需要。DayMosaic 无需注册或登录即可使用。<span lang="en"> No. You can use DayMosaic without registering or signing in.</span></p>
+        </details>
+
+        <details>
+          <summary>任务和日程数据存在哪里？ / Where is my data stored?</summary>
+          <p>任务、日程、专注记录和设置默认保存在你的设备本地。使用 AI 规划时，相关规划信息会发送到 DayMosaic 服务及其外部 AI 模型服务商；完整说明见隐私政策。<span lang="en"> Tasks, schedules, focus records, and settings are stored locally. When you use AI planning, relevant planning information is sent to DayMosaic and its external AI model provider. See the Privacy Policy for details.</span></p>
+        </details>
+
+        <details>
+          <summary>AI 规划失败怎么办？ / What should I do if AI planning fails?</summary>
+          <p>请先检查网络连接并重试。如果提示额度已用完，可以复制支持码并通过邮件联系我们。AI 返回的建议在点击“应用”前不会修改真实日程。<span lang="en"> Check your connection and try again. If the quota is exhausted, copy the support code and email us. A proposal does not change your real schedule until you apply it.</span></p>
+        </details>
+
+        <details>
+          <summary>提醒没有出现怎么办？ / Why didn’t I receive a reminder?</summary>
+          <p>请检查 iPhone“设置”&gt;“通知”&gt;“DayMosaic”的通知权限、App 内的提醒设置以及系统专注模式。修改后可以重新打开 App 让提醒重新安排。<span lang="en"> Check notification permission in iPhone Settings &gt; Notifications &gt; DayMosaic, the App’s reminder settings, and Focus mode. Reopen the App after changing settings.</span></p>
+        </details>
+
+        <details>
+          <summary>如何删除数据或撤回 AI 处理同意？ / How can I delete data or withdraw consent?</summary>
+          <p>你可以在 App 内删除任务和日程、重置相关数据，或删除 App。AI 规划是可选功能，你可以拒绝或不再使用它。如需删除服务端请求记录或撤回同意，请发送邮件联系我们。<span lang="en"> You can delete tasks and schedules, reset relevant data, or delete the App. AI planning is optional and can be declined or stopped. Email us to request deletion of server records or withdraw consent.</span></p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-panel" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">仍然需要帮助？</h2>
+        <p>发送邮件给我们，我们会尽快回复。</p>
+        <p lang="en">Still need help? Email us and we’ll respond as soon as we can.</p>
+        <p class="contact-meta">运营者 / Operator：张海超（Haichao Zhang） · 中国 / China</p>
+      </div>
+      <a
+        class="button button-primary"
+        href="mailto:shenshuoyouguang@outlook.com?subject=DayMosaic%20Support%20%2F%20%E6%8B%BC%E6%8B%BC%E6%97%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81"
+      >shenshuoyouguang@outlook.com</a>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© 2026 DayMosaic · Updated 2026-09-09</span>
+    <nav class="footer-links" aria-label="Legal and product links">
+      <a href="../privacy-policies/daymosaic/privacy-policy.html">隐私政策 / Privacy Policy</a>
+      <a href="../terms-of-service/daymosaic/terms-of-service.html">服务条款 / Terms of Service</a>
+    </nav>
+  </footer>
+</body>
+</html>
