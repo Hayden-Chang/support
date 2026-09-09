@@ -24,4 +24,6 @@ test("DayMosaic policy is bilingual and locks its AI data path", async () => {
   assert.match(html, /<section id="chinese"[^>]+lang="zh-CN">/);
   assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1">/);
   assert.doesNotMatch(html, /<script\b/i);
+  assert.doesNotMatch(html, /<dt>App version<\/dt><dd>Beta<\/dd>/);
+  assert.doesNotMatch(html, /<dt>应用版本<\/dt><dd>Beta 版<\/dd>/);
 });
