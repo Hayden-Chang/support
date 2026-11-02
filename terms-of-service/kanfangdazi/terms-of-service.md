@@ -2,11 +2,11 @@
 
 ## 1. 服务与范围
 
-看房搭子帮助你在本机整理看房清单、房源、问题、备注和影像。适用于无需登录的 iOS 版本。运营者：张海超（Haichao Zhang）。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
+看房搭子帮助你在本机整理看房清单、房源、问题、备注和影像。本条款适用于看房搭子 iOS App。运营者：张海超（Haichao Zhang）。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 11 月 2 日。
 
 ### Service and scope
 
-Kanfangdazi organizes property checklists, records, issues, notes and media on your device. These terms cover the account-free iOS edition. Operator: Haichao Zhang. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
+Kanfangdazi organizes property checklists, records, issues, notes and media on your device. These terms cover the Kanfangdazi iOS app. Operator: Haichao Zhang. Contact: shenshuoyouguang@outlook.com. Updated November 2, 2026.
 
 ## 2. 辅助记录与内容责任
 
@@ -26,11 +26,11 @@ Records and media are principally stored on your device. Keep safe, regular ZIP 
 
 ## 4. 扩容与退款
 
-基础使用无需 App 账号，免费容量以 App 显示为准。扩容按购买页数量和 Apple 当地价格提供，是单次购买，不是自动续订订阅。购买及恢复需要联网和 Apple 付款授权；验证后才确认容量，取消、待批准或未验证不视为成功。同一交易重复处理不重复增加容量。退款通过 Apple 申请；确认退款后可能撤回对应容量，但不自动删除已有房源。超额时可能限制新建或还原。旧购买或恢复问题请联系支持。
+基础使用无需 App 账号，免费容量以 App 显示为准。扩容按购买页数量和 Apple 当地价格提供，是单次购买，不是自动续订订阅。购买及恢复需要联网和 Apple 付款授权；验证后才确认容量，取消、待批准或未验证不视为成功。同一交易重复处理不重复增加容量。退款通过 Apple 申请；确认退款后可能撤回对应容量，但不自动删除已有房源。超额时可能限制新建或还原。购买或恢复遇到问题，请联系支持。
 
 ### Purchases and refunds
 
-Basic use needs no app account; the app displays free capacity. Optional capacity is a one-time purchase, not an auto-renewing subscription, at the displayed quantity and localized Apple price. Purchase and restore need a connection and Apple authorization. Only verified transactions grant capacity; cancellations, pending approvals and unverified results are not success. Reprocessing a transaction does not grant twice. Request refunds through Apple. Confirmed refunds may withdraw capacity without automatically deleting records; creation or restoration may be limited while over capacity. Contact support about legacy purchases or restoration.
+Basic use needs no app account; the app displays free capacity. Optional capacity is a one-time purchase, not an auto-renewing subscription, at the displayed quantity and localized Apple price. Purchase and restore need a connection and Apple authorization. Only verified transactions grant capacity; cancellations, pending approvals and unverified results are not success. Reprocessing a transaction does not grant twice. Request refunds through Apple. Confirmed refunds may withdraw capacity without automatically deleting records; creation or restoration may be limited while over capacity. Contact support if you have trouble with purchases or restoration.
 
 ## 5. 联网服务与隐私
 
