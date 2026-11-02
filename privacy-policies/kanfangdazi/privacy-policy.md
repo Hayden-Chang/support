@@ -2,11 +2,11 @@
 
 ## 1. 范围与联系
 
-本政策适用于看房搭子 iOS 无需登录的本机记录版本，不适用于微信小程序。运营者：张海超（Haichao Zhang），中国。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
+本政策适用于看房搭子 iOS App。运营者：张海超（Haichao Zhang），中国。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 11 月 2 日。
 
 ### Scope and contact
 
-This policy covers the account-free, on-device iOS edition of Kanfangdazi, not the WeChat mini program. Operator: Haichao Zhang, China. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
+This policy covers the Kanfangdazi iOS app. Operator: Haichao Zhang, China. Contact: shenshuoyouguang@outlook.com. Updated November 2, 2026.
 
 ## 2. 本机记录与备份
 
@@ -26,11 +26,11 @@ Camera and microphone access capture photos or videos at your request. System ph
 
 ## 4. 扩容购买
 
-扩容通过 Apple App 内购买处理，需要联网，但不要求创建看房搭子账号。Apple 处理付款，我们不获取银行卡信息。购买及恢复会处理产品、交易标识、交易验证结果与必要的随机购买标识，用于确认容量、避免重复到账和处理退款。已确认容量保存在本机，离线可继续使用；购买、恢复和重新核验需要联网。购买记录不等于房源或媒体备份，换机前仍需导出。具体商品和恢复条件以已发布版本的购买页面为准。
+扩容通过 Apple App 内购买处理，需要联网，但不要求创建看房搭子账号。Apple 处理付款，我们不获取银行卡信息。购买及恢复会处理产品、交易标识、交易验证结果与必要的随机购买标识，用于确认容量、避免重复到账和处理退款。已确认容量保存在本机，离线可继续使用；购买、恢复和重新核验需要联网。购买记录不等于房源或媒体备份，换机前仍需导出。商品及恢复条件请查看 App 内购买页面。
 
 ### Capacity purchases
 
-Apple handles in-app payments; no Kanfangdazi account is required and we do not receive payment-card details. Purchase and restore process product and transaction identifiers, verification results and necessary random purchase identifiers to verify capacity, prevent duplicate grants and handle refunds. Confirmed capacity is cached for offline use. Purchase, restore and revalidation need a connection. Purchases do not back up records or media. Check the released app for available products and restore conditions.
+Apple handles in-app payments; no Kanfangdazi account is required and we do not receive payment-card details. Purchase and restore process product and transaction identifiers, verification results and necessary random purchase identifiers to verify capacity, prevent duplicate grants and handle refunds. Confirmed capacity is cached for offline use. Purchase, restore and revalidation need a connection. Purchases do not back up records or media. See the in-app purchase page for available products and restore conditions.
 
 ## 5. 反馈与支持
 
@@ -42,8 +42,8 @@ Only when you submit does the app send usability, checklist and functionality ra
 
 ## 6. 第三方、保存与选择
 
-可选联网功能涉及 Apple、天地图及我们的服务，它们处理请求所需的数据。Apple 隐私说明：https://www.apple.com/legal/privacy/ ；天地图：https://www.tianditu.gov.cn/ 。App 不使用广告 SDK、不进行跨 App 跟踪、不出售个人信息。ZIPFoundation 仅用于本机 ZIP 处理。房源及媒体保留至你删除或系统清理；导出副本由你及接收方管理。移除登录入口不会主动删除旧版本本机记录。你可不使用联网工具或购买、撤回权限、导出记录，并在归档房源中永久删除房源及关联媒体。删除 App 或设备故障可能丢失未备份数据。旧账号数据及其他隐私请求可联系邮箱。本版没有新的 App 账号注册或登录；实质变化将更新本页并按适用要求通知。
+可选联网功能涉及 Apple、天地图及我们的服务，它们处理请求所需的数据。Apple 隐私说明：https://www.apple.com/legal/privacy/ ；天地图：https://www.tianditu.gov.cn/ 。App 不使用广告 SDK、不进行跨 App 跟踪、不出售个人信息。ZIP 文件在设备上处理。房源及媒体保留至你删除或系统清理；导出副本由你及接收方管理。你可不使用联网工具或购买、撤回权限、导出记录，并在归档房源中永久删除房源及关联媒体。删除 App 或设备故障可能丢失未备份数据。旧账号数据及其他隐私请求可联系邮箱。隐私政策如有重大变更，我们会更新本页，并按适用要求通知你。
 
 ### Third parties, retention and choices
 
-Optional services involve Apple, Tianditu and our service. See https://www.apple.com/legal/privacy/ and https://www.tianditu.gov.cn/ . The app has no advertising SDK, cross-app tracking or sale of personal information. ZIPFoundation processes local ZIP files. Records remain until you delete them or the system clears storage; exported copies are controlled by you and recipients. Removing sign-in does not itself delete legacy local records. You can avoid online tools and purchases, revoke access, export records, and permanently delete archived properties and their media. App removal or device failure can lose unbacked-up data. Email for legacy account-data or privacy requests. This edition offers no new app registration or sign-in. Material changes will update this page and be communicated as applicable.
+Optional services involve Apple, Tianditu and our service. See https://www.apple.com/legal/privacy/ and https://www.tianditu.gov.cn/ . The app has no advertising SDK, cross-app tracking or sale of personal information. ZIP files are processed on your device. Records remain until you delete them or the system clears storage; exported copies are controlled by you and recipients. You can avoid online tools and purchases, revoke access, export records, and permanently delete archived properties and their media. App removal or device failure can lose unbacked-up data. Email for legacy account-data or privacy requests. If this privacy policy changes materially, we will update this page and notify you as required.
