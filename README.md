@@ -58,4 +58,4 @@ Use the matching hosted Terms of Service page as the `Terms of Use (EULA)` URL.
 - Privacy: https://hayden-chang.github.io/support/privacy-policies/kanfangdazi/privacy-policy.html
 - Terms: https://hayden-chang.github.io/support/terms-of-service/kanfangdazi/terms-of-service.html
 - Keep policy Markdown and HTML aligned.
-- Applies upon release of the account-free iOS edition, not to the WeChat mini program. Recheck purchase restoration and data handling against released code.
+- Applies upon release of the account-free iOS edition. Recheck purchase restoration and data handling against released code.

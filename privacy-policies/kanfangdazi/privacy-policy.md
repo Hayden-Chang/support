@@ -2,11 +2,11 @@
 
 ## 1. 范围与联系
 
-本政策适用于看房搭子 iOS 无需登录的本机记录版本，不适用于微信小程序。运营者：张海超（Haichao Zhang），中国。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
+本政策适用于看房搭子 iOS 无需登录的本机记录版本。运营者：张海超（Haichao Zhang），中国。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
 
 ### Scope and contact
 
-This policy covers the account-free, on-device iOS edition of Kanfangdazi, not the WeChat mini program. Operator: Haichao Zhang, China. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
+This policy covers the account-free, on-device iOS edition of Kanfangdazi. Operator: Haichao Zhang, China. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
 
 ## 2. 本机记录与备份
 

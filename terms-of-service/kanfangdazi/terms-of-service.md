@@ -2,11 +2,11 @@
 
 ## 1. 服务与范围
 
-看房搭子帮助你在本机整理看房清单、房源、问题、备注和影像。适用于无需登录的 iOS 版本，不适用于微信小程序。运营者：张海超（Haichao Zhang）。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
+看房搭子帮助你在本机整理看房清单、房源、问题、备注和影像。适用于无需登录的 iOS 版本。运营者：张海超（Haichao Zhang）。联系邮箱：shenshuoyouguang@outlook.com。更新日期：2026 年 10 月 30 日；随该版本发布生效。
 
 ### Service and scope
 
-Kanfangdazi organizes property checklists, records, issues, notes and media on your device. These terms cover the account-free iOS edition, not the WeChat mini program. Operator: Haichao Zhang. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
+Kanfangdazi organizes property checklists, records, issues, notes and media on your device. These terms cover the account-free iOS edition. Operator: Haichao Zhang. Contact: shenshuoyouguang@outlook.com. Updated October 30, 2026; effective when this edition is released.
 
 ## 2. 辅助记录与内容责任
 
